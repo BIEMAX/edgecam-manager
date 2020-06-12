@@ -1,15 +1,19 @@
-# edgecam-manager
-Edgecam manager is a MRP system, addin of Edgecam system.
+Edgecam Manager is a independent software that allow the user do things that perhaps was not possible inside the Hexagon Edgecam. 
 
-Edgecam Manager is a independent software that allow the user do things that perhaps was not possible. The system is organized with the following modules:
+The system is a addin, that runs over the windows and linux operation systems (without edgecam installed). This allow that others departaments can use this (to control/management inventory, sales, tools, machine hours and others.
 
--Create **tasks**
-  >Create tasks others users (sticky notes, reunions)
-  
-  
--Create **production orders** 
-  <Create production orders for turning, milling and other CAM operations
-  
-  
--Create **quotes** 
-  >Create quotes (basic quotes, advanced quotes)
+The system is divided in the following modules:
+
+##Users
+The system allow create users from one or more organization units, assign system permissions (like delete, create, check departament requests, checkin, checkout).
+
+##Tasks
+User can create tasks to himself or other user
+
+##Production Orders
+
+##Quotes
+
+##Inventory
+
+##Shoop floor
