@@ -1,23 +1,17 @@
 <!-- Translation 2020 R1 (pt-BR) -->
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--
-
 Inside the CORE, will be applied this translation like this:
-
 public class VariablesConfigs{
 	public String Variable;
 	public String Value;
 }
-
 List<VariablesConfigs> Lst = DataFromXml;
-
 //Applied 'this.Text' value
 this.Text = Lst.Where(x => x.Variable == "this").Select(y => y.Value.ToString()).FirstOfDefault();
-
 foreach(VariablesConfigs v in Lst){
 	this.Controls[v.Variable].Text = v.Value;
 }
-
 -->
 <Configuration>
   <FrmLogin>
@@ -37,6 +31,166 @@ foreach(VariablesConfigs v in Lst){
 	<ConfigValue Variable="pictureBox2" Value="" />
   </FrmLogin>
   <FrmLogin_NewPass>
-	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="this" Value="Edgecam manager" />
+	<ConfigValue Variable="groupBox1" Value="" />
+	<ConfigValue Variable="btnReturn" Value="" />
+	<ConfigValue Variable="txtSenha" Value="" />
+	<ConfigValue Variable="label2" Value="" />
+	<ConfigValue Variable="txtUser" Value="" />
+	<ConfigValue Variable="label1" Value="" />
+	<ConfigValue Variable="btnChangePass" Value="" />
   </FrmLogin_NewPass>
+  <FrmLogin_UserCnns>
+	<ConfigValue Variable="this" Value="" />
+	<ConfigValue Variable="groupBox1" Value="" />
+	<ConfigValue Variable="label13" Value="" />
+	<ConfigValue Variable="txt_Cn_EcUser" Value="" />
+	<ConfigValue Variable="label12" Value="" />
+	<ConfigValue Variable="txt_Cn_EcPass" Value="" />
+	<ConfigValue Variable="label11" Value="" />
+	<ConfigValue Variable="txt_Cn_DbEc" Value="" />
+	<ConfigValue Variable="label9" Value="" />
+	<ConfigValue Variable="txt_Cn_SqlEc" Value="" />
+	<ConfigValue Variable="groupBox2" Value="" />
+	<ConfigValue Variable="label10" Value="" />
+	<ConfigValue Variable="txt_Cn_EcMgrUser" Value="" />
+	<ConfigValue Variable="label14" Value="" />
+	<ConfigValue Variable="txt_Cn_EcMgrPass" Value="" />
+	<ConfigValue Variable="label15" Value="" />
+	<ConfigValue Variable="txt_Cn_DbEcMgr" Value="" />
+	<ConfigValue Variable="label16" Value="" />
+	<ConfigValue Variable="txt_Cn_SqlEcMgr" Value="" />
+	<ConfigValue Variable="alert" Value="" />
+	<ConfigValue Variable="groupBox3" Value="" />
+	<ConfigValue Variable="label1" Value="" />
+	<ConfigValue Variable="txt_Cn_EcMgrLogUser" Value="" />
+	<ConfigValue Variable="label2" Value="" />
+	<ConfigValue Variable="txt_Cn_EcMgrLogPass" Value="" />
+	<ConfigValue Variable="label3" Value="" />
+	<ConfigValue Variable="txt_Cn_DbEcMgrLog" Value="" />
+	<ConfigValue Variable="label4" Value="" />
+	<ConfigValue Variable="txt_Cn_SqlEcMgrLog" Value="" />
+	<ConfigValue Variable="btn_Test_EcMgrLog" Value="" />
+	<ConfigValue Variable="btnSave" Value="" />
+	<ConfigValue Variable="btnReturn" Value="" />
+	<ConfigValue Variable="btn_Test_EcMgr" Value="" />
+	<ConfigValue Variable="btn_Test_Ec" Value="" />
+  </FrmLogin_UserCnns>
+  <FrmMain2>
+	<ConfigValue Variable="this" Value="" />
+	<ConfigValue Variable="ultraGridBand1" Value="" />
+	<ConfigValue Variable="ultraGridColumn1" Value="Selecionar" />
+	<ConfigValue Variable="ultraGridColumn2" Value="Item não salvo" />
+	<ConfigValue Variable="ultraGridColumn3" Value="HashCode" />
+	<ConfigValue Variable="buttonTool1" Value="Home" />
+	<ConfigValue Variable="buttonTool2" Value="Alterar senha" />
+	<ConfigValue Variable="buttonTool3" Value="Logout" />
+	<ConfigValue Variable="buttonTool4" Value="Sair" />
+	<ConfigValue Variable="ribbonTab1" Value="rbModulos" />
+	<ConfigValue Variable="ribbonGroup1" Value="" />
+	<ConfigValue Variable="buttonTool12" Value="" />
+	<ConfigValue Variable="buttonTool28" Value="" />
+	<ConfigValue Variable="buttonTool13" Value="" />
+	<ConfigValue Variable="ribbonGroup2" Value="" />
+	<ConfigValue Variable="buttonTool16" Value="" />
+	<ConfigValue Variable="buttonTool17" Value="" />
+	<ConfigValue Variable="ribbonGroup3" Value="" />
+	<ConfigValue Variable="buttonTool20" Value="" />
+	<ConfigValue Variable="buttonTool21" Value="" />
+	<ConfigValue Variable="buttonTool22" Value="" />
+	<ConfigValue Variable="ribbonGroup4" Value="" />
+	<ConfigValue Variable="buttonTool45" Value="" />
+	<ConfigValue Variable="buttonTool46" Value="" />
+	<ConfigValue Variable="buttonTool26" Value="" />
+	<ConfigValue Variable="buttonTool47" Value="" />
+	<ConfigValue Variable="ribbonGroup5" Value="" />
+	<ConfigValue Variable="buttonTool31" Value="" />
+	<ConfigValue Variable="ribbonTab2" Value="" />
+	<ConfigValue Variable="ribbonGroup6" Value="" />
+	<ConfigValue Variable="buttonTool33" Value="" />
+	<ConfigValue Variable="ribbonGroup7" Value="" />
+	<ConfigValue Variable="buttonTool35" Value="" />
+	<ConfigValue Variable="buttonTool36" Value="" />
+	<ConfigValue Variable="ribbonGroup8" Value="" />
+	<ConfigValue Variable="buttonTool10" Value="" />
+	<ConfigValue Variable="buttonTool51" Value="" />
+	<ConfigValue Variable="buttonTool54" Value="" />
+	<ConfigValue Variable="ribbonTab3" Value="" />
+	<ConfigValue Variable="ribbonGroup9" Value="" />
+	<ConfigValue Variable="buttonTool52" Value="" />
+	<ConfigValue Variable="ribbonTab4" Value="" />
+	<ConfigValue Variable="textBoxTool3" Value="" />
+	<ConfigValue Variable="buttonTool5" Value="" />
+	<ConfigValue Variable="buttonTool6" Value="" />
+	<ConfigValue Variable="buttonTool7" Value="Alterar senha" />
+	<ConfigValue Variable="buttonTool8" Value="Logout" />
+	<ConfigValue Variable="buttonTool9" Value="Sair" />
+	<ConfigValue Variable="buttonTool11" Value="Sobre" />
+	<ConfigValue Variable="buttonTool14" Value="Inicio" />
+	<ConfigValue Variable="buttonTool15" Value="Tarefas concluídas" />
+	<ConfigValue Variable="buttonTool18" Value="Consultar ordens" />
+	<ConfigValue Variable="buttonTool19" Value="Nova ordem de produção" />
+	<ConfigValue Variable="buttonTool23" Value="Consultar orçamentos" />
+	<ConfigValue Variable="buttonTool24" Value="Novo orçamento" />
+	<ConfigValue Variable="buttonTool25" Value="Criptomoedas" />
+	<ConfigValue Variable="buttonTool27" Value="Consultar inventário" />
+	<ConfigValue Variable="buttonTool29" Value="Nova tarefa" />
+	<ConfigValue Variable="buttonTool30" Value="Ferramentas" />
+	<ConfigValue Variable="buttonTool32" Value="Relatórios" />
+	<ConfigValue Variable="buttonTool34" Value="Configurações" />
+	<ConfigValue Variable="buttonTool40" Value="Importar" />
+	<ConfigValue Variable="buttonTool41" Value="Exportar" />
+	<ConfigValue Variable="buttonTool42" Value="Calculadora" />
+	<ConfigValue Variable="buttonTool43" Value="Calculadora para tempos" />
+	<ConfigValue Variable="buttonTool44" Value="Calendário" />
+	<ConfigValue Variable="buttonTool48" Value="Inventários" />
+	<ConfigValue Variable="buttonTool49" Value="Trabalhos" />
+	<ConfigValue Variable="buttonTool50" Value="Máquinas" />
+	<ConfigValue Variable="buttonTool53" Value="Syneco" />
+	<ConfigValue Variable="textBoxTool4" Value="Pesquisa rápida" />
+	<!--Options to customizable ribbon (start with '#' symbol) DO NOT CHANGE-->
+	<ConfigValue Variable="#RibbonDisplayOptions" Value="" />
+	<ConfigValue Variable="#RibbonDisplayOptions_AutoHide_Title" Value="" />
+	<ConfigValue Variable="#RibbonDisplayOptions_AutoHide_Description" Value="" />
+	<ConfigValue Variable="#RibbonDisplayOptions_TabsOnly_Title" Value="" />
+	<ConfigValue Variable="#RibbonDisplayOptions_TabsOnly_Description" Value="" />
+	<ConfigValue Variable="#RibbonDisplayOptions_Full_Title" Value="" />
+	<ConfigValue Variable="#RibbonDisplayOptions_Full_Description" Value="" />
+	<ConfigValue Variable="#AddToQuickAccessToolbar" Value="" />
+	<ConfigValue Variable="#RemoveFromQuickAccessToolbar" Value="" />
+	<ConfigValue Variable="#QuickAccessToolbarAboveRibbon" Value="" />
+	<ConfigValue Variable="#QuickAccessToolbarBelowRibbon" Value="" />
+	<ConfigValue Variable="#CustomizeQAT" Value="Customizar barra de acesso rápido" />
+	<ConfigValue Variable="#QuickAccessToolbarAboveRibbonCustomize" Value="Mostrar acima da guia" />
+	<ConfigValue Variable="#QuickAccessToolbarBelowRibbonCustomize" Value="Mostrar abaixo da guia" />
+	<ConfigValue Variable="#CustomizeTheRibbon" Value="Customizar as guias" />
+	<ConfigValue Variable="#MinimizeRibbon" Value="Minimizar guias" />
+	<!--Delegate status (start with '%' symbol) DO NOT CHANGE-->
+	<ConfigValue Variable="%Load_StartWindow" Value="Carregando interface inicial" />
+	<ConfigValue Variable="%Load_Orders" Value="Carregando ordens" />
+	<ConfigValue Variable="%Load_Quotes" Value="Carregando os orçamentos" />
+	<ConfigValue Variable="%Load_UserInformation" Value="Carregando informações do usuário" />
+	<ConfigValue Variable="%Load_Jobs" Value="Carregando os trabalhos" />
+	<ConfigValue Variable="%Load_Tools" Value="Carregando as ferramentas" />
+	<ConfigValue Variable="%Load_Machines" Value="Carregando as máquinas" />
+	<ConfigValue Variable="%Load_Calendar" Value="Carregando calendário" />
+	<ConfigValue Variable="%Load_Notifications" Value="Carregando notificações" />
+	<ConfigValue Variable="%Load_Interface" Value="Carregando a interface" />
+	<ConfigValue Variable="%Load_UpdatingInformations" Value="Atualizando informações" />
+	<ConfigValue Variable="%Load_CheckingEdgecam" Value="Verificando dados do Edgecam" />
+	<ConfigValue Variable="%Load_UpdatingEdgecam" Value="Atualizando dados do Edgecam" />
+	<ConfigValue Variable="%Load_FinishInterfaceLoad" Value="Concluindo carga das interfaces" />
+	<ConfigValue Variable="%Load_Finish" Value="Concluído" />
+  </FrmMain2>
+  <FrmTarefas>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+  </FrmTarefas>
 </Configuration>
