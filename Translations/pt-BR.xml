@@ -1,0 +1,42 @@
+<!-- Translation 2020 R1 (pt-BR) -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--
+
+Inside the CORE, will be applied this translation like this:
+
+public class VariablesConfigs{
+	public String Variable;
+	public String Value;
+}
+
+List<VariablesConfigs> Lst = DataFromXml;
+
+//Applied 'this.Text' value
+this.Text = Lst.Where(x => x.Variable == "this").Select(y => y.Value.ToString()).FirstOfDefault();
+
+foreach(VariablesConfigs v in Lst){
+	this.Controls[v.Variable].Text = v.Value;
+}
+
+-->
+<Configuration>
+  <FrmLogin>
+	<!--'Variable' contains the control name meanwhile the 'Value' contains the text in the specific language -->
+	<ConfigValue Variable="this" Value="Edgecam Manager" />
+	<ConfigValue Variable="groupBox1" Value="" />
+	<ConfigValue Variable="btnCfgDbs" Value="" />
+	<ConfigValue Variable="txtLoginFailed" Value="Usuário ou senha inválidos" />
+	<ConfigValue Variable="txtSenha" Value="" />
+	<ConfigValue Variable="label2" Value="" />
+	<ConfigValue Variable="txtUser" Value="" />
+	<ConfigValue Variable="cbxManterConectado" Value="Mantenha-me conectado" />
+	<ConfigValue Variable="btnIniciar" Value="" />
+	<ConfigValue Variable="linkLabel_ForgotPassword" Value="Esqueci minha senha" />
+	<ConfigValue Variable="label1" Value="" />
+	<ConfigValue Variable="pictureBox1" Value="" />
+	<ConfigValue Variable="pictureBox2" Value="" />
+  </FrmLogin>
+  <FrmLogin_NewPass>
+	<ConfigValue Variable="" Value="" />
+  </FrmLogin_NewPass>
+</Configuration>
