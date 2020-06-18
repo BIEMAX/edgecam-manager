@@ -1,6 +1,19 @@
 <!-- Translation 2020 R1 (pt-BR) -->
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--
+
+****************************NOTES****************************
+
+	1- Inside the forms, the parameters 'this' refers to form text.
+	2- Inside the forms, the parameters that are empty (in portuguese translation)
+do not change, only if you were introduced to do through the support.
+	3- Do not remove any form or parameter, if you delete a line, you can create
+a lot of errors inside the system. Only change if you are being accompanied.
+	4- Each version of Edgecam Manager will have a different translation file,
+do not copy from an old version to a new one.
+
+-->
+<!--
 Inside the CORE, will be applied this translation like this:
 public class VariablesConfigs{
 	public String Variable;
@@ -149,17 +162,17 @@ foreach(VariablesConfigs v in Lst){
 	<ConfigValue Variable="buttonTool53" Value="Syneco" />
 	<ConfigValue Variable="textBoxTool4" Value="Pesquisa rápida" />
 	<!--Options to customizable ribbon (start with '#' symbol) DO NOT CHANGE-->
-	<ConfigValue Variable="#RibbonDisplayOptions" Value="" />
-	<ConfigValue Variable="#RibbonDisplayOptions_AutoHide_Title" Value="" />
-	<ConfigValue Variable="#RibbonDisplayOptions_AutoHide_Description" Value="" />
-	<ConfigValue Variable="#RibbonDisplayOptions_TabsOnly_Title" Value="" />
-	<ConfigValue Variable="#RibbonDisplayOptions_TabsOnly_Description" Value="" />
-	<ConfigValue Variable="#RibbonDisplayOptions_Full_Title" Value="" />
-	<ConfigValue Variable="#RibbonDisplayOptions_Full_Description" Value="" />
-	<ConfigValue Variable="#AddToQuickAccessToolbar" Value="" />
-	<ConfigValue Variable="#RemoveFromQuickAccessToolbar" Value="" />
-	<ConfigValue Variable="#QuickAccessToolbarAboveRibbon" Value="" />
-	<ConfigValue Variable="#QuickAccessToolbarBelowRibbon" Value="" />
+	<ConfigValue Variable="#RibbonDisplayOptions" Value="Opções de visualização" />
+	<ConfigValue Variable="#RibbonDisplayOptions_AutoHide_Title" Value="Ocultar a faixa de opções automaticamente" />
+	<ConfigValue Variable="#RibbonDisplayOptions_AutoHide_Description" Value="Ocultar a faixa de opções.<br/>Clique na parte superior do aplicativo para mostrá-la." />
+	<ConfigValue Variable="#RibbonDisplayOptions_TabsOnly_Title" Value="Mostrar guias" />
+	<ConfigValue Variable="#RibbonDisplayOptions_TabsOnly_Description" Value="Mostrar somente as guias da faixa de opções.<br/>Clique em uma guia para mostrar os comandos." />
+	<ConfigValue Variable="#RibbonDisplayOptions_Full_Title" Value="Mostrar guias e comandos" />
+	<ConfigValue Variable="#RibbonDisplayOptions_Full_Description" Value="Mostrar todas guias da faixa de opções e comandos o tempo todo" />
+	<ConfigValue Variable="#AddToQuickAccessToolbar" Value="Adicionar a barra de acesso rápido" />
+	<ConfigValue Variable="#RemoveFromQuickAccessToolbar" Value="Remover da barra de acesso rápido" />
+	<ConfigValue Variable="#QuickAccessToolbarAboveRibbon" Value="Mostrar barra de acesso rápido acima da guia" />
+	<ConfigValue Variable="#QuickAccessToolbarBelowRibbon" Value="Mostrar barra de acesso rápido abaixo da guia" />
 	<ConfigValue Variable="#CustomizeQAT" Value="Customizar barra de acesso rápido" />
 	<ConfigValue Variable="#QuickAccessToolbarAboveRibbonCustomize" Value="Mostrar acima da guia" />
 	<ConfigValue Variable="#QuickAccessToolbarBelowRibbonCustomize" Value="Mostrar abaixo da guia" />
@@ -183,14 +196,269 @@ foreach(VariablesConfigs v in Lst){
 	<ConfigValue Variable="%Load_Finish" Value="Concluído" />
   </FrmMain2>
   <FrmTarefas>
-	<ConfigValue Variable="" Value="" />
-	<ConfigValue Variable="" Value="" />
-	<ConfigValue Variable="" Value="" />
-	<ConfigValue Variable="" Value="" />
-	<ConfigValue Variable="" Value="" />
-	<ConfigValue Variable="" Value="" />
-	<ConfigValue Variable="" Value="" />
-	<ConfigValue Variable="" Value="" />
-	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="cms" Value="" />
+	<ConfigValue Variable="btnNew" Value="" />
+	<ConfigValue Variable="btnEdit" Value="" />
+	<ConfigValue Variable="btnComplete" Value="" />
+	<ConfigValue Variable="btnDelete" Value="" />
+	<ConfigValue Variable="btnViewDetails" Value="" />
+	<ConfigValue Variable="toolTip" Value="" />
+	<ConfigValue Variable="btnExportar" Value="" />
+	<ConfigValue Variable="splitContainer1" Value="" />
+	<ConfigValue Variable="ueb" Value="" />
+	<ConfigValue Variable="ugbFiltros" Value="" />
+	<ConfigValue Variable="ultraLabel3" Value="" />
+	<ConfigValue Variable="ultraLabel1" Value="" />
+	<ConfigValue Variable="ultraLabel2" Value="" />
+	<ConfigValue Variable="ubtnPesquisar" Value="" />
+	<ConfigValue Variable="txtAssunto" Value="" />
+	<ConfigValue Variable="dtData" Value="" />
+	<ConfigValue Variable="cbxPrioridade" Value="" />
+	<ConfigValue Variable="cbUsarData" Value="" />
+	<ConfigValue Variable="btnExpandePainel" Value="" />
+	<ConfigValue Variable="ugbTarefas" Value="" />
+	<ConfigValue Variable="udgv" Value="" />
+	<!--Columns names (start with '=' symbol) DO NOT CHANGE-->
+	<ConfigValue Variable="=ultraGridColumn1" Value="" />
+	<ConfigValue Variable="=ultraGridColumn2" Value="" />
+	<ConfigValue Variable="=ultraGridColumn3" Value="" />
+	<ConfigValue Variable="=ultraGridColumn4" Value="" />
+	<ConfigValue Variable="=ultraGridColumn5" Value="" />
+	<ConfigValue Variable="=ultraGridColumn6" Value="" />
+	<ConfigValue Variable="=ultraGridColumn7" Value="" />
+	<ConfigValue Variable="=ultraGridColumn8" Value="" />
+	<ConfigValue Variable="=ultraGridColumn9" Value="" />
+	<ConfigValue Variable="=ultraGridColumn10" Value="" />
+	<ConfigValue Variable="=ultraGridColumn11" Value="" />
+	<ConfigValue Variable="=ultraGridColumn12" Value="" />
+	<ConfigValue Variable="=ultraGridColumn13" Value="" />
+	<ConfigValue Variable="=ultraGridColumn14" Value="" />
+	<ConfigValue Variable="=ultraGridColumn15" Value="" />
+	<ConfigValue Variable="=ultraGridColumn16" Value="" />
+	<ConfigValue Variable="=ultraGridColumn17" Value="" />
+	<ConfigValue Variable="=ultraGridColumn18" Value="" />
+	<ConfigValue Variable="=ultraGridColumn19" Value="" />
+	<!--List containing shortcuts to others interface (start with '&' symbol) DO NOT CHANGE-->
+	<ConfigValue Variable="&ultraExplorerBarItem1" Value="Todas as tarefas" />
+	<ConfigValue Variable="&ultraExplorerBarItem2" Value="Nova tarefa" />
+	<ConfigValue Variable="&ultraExplorerBarGroup1" Value="Tarefas" />
+	<ConfigValue Variable="&ultraExplorerBarItem3" Value="Todas as ordens de produção" />
+	<ConfigValue Variable="&ultraExplorerBarItem4" Value="Nova ordem de produção" />
+	<ConfigValue Variable="&ultraExplorerBarGroup2" Value="Ordens de produção" />
+	<ConfigValue Variable="&ultraExplorerBarItem5" Value="Todos os orçamentos" />
+	<ConfigValue Variable="&ultraExplorerBarItem6" Value="Novo orçamento" />
+	<ConfigValue Variable="&ultraExplorerBarGroup3" Value="Orçamentos" />
+	<ConfigValue Variable="&ultraExplorerBarItem7" Value="Todo o estoque" />
+	<ConfigValue Variable="&ultraExplorerBarItem8" Value="Novo estoque" />
+	<ConfigValue Variable="&ultraExplorerBarGroup4" Value="Inventário" />
+	<ConfigValue Variable="&ultraExplorerBarItem9" Value="Todos os trabalhos" />
+	<ConfigValue Variable="&ultraExplorerBarItem10" Value="Novo trabalho" />
+	<ConfigValue Variable="&ultraExplorerBarItem11" Value="Novo trabalho de orçamento" />
+	<ConfigValue Variable="&ultraExplorerBarGroup5" Value="Trabalhos" />
+	<ConfigValue Variable="&ultraExplorerBarItem12" Value="Todas as ferramentas" />
+	<ConfigValue Variable="&ultraExplorerBarItem13" Value="Cadastro de ferramentas" />
+	<ConfigValue Variable="&ultraExplorerBarItem14" Value="Rastreabilidade de ferramentas" />
+	<ConfigValue Variable="&ultraExplorerBarGroup6" Value="Ferramentas" />
+	<ConfigValue Variable="&ultraExplorerBarItem15" Value="Todas as máquinas" />
+	<ConfigValue Variable="&ultraExplorerBarItem16" Value="Cadastro de máquinas" />
+	<ConfigValue Variable="&ultraExplorerBarGroup7" Value="Máquinas" />
+	<ConfigValue Variable="&ultraExplorerBarItem17" Value="Todos os pedidos" />
+	<ConfigValue Variable="&ultraExplorerBarItem18" Value="Novo pedido de cliente" />
+	<ConfigValue Variable="&ultraExplorerBarItem19" Value="Novo pedido de compra" />
+	<ConfigValue Variable="&ultraExplorerBarGroup8" Value="Vendas" />
+	<ConfigValue Variable="&ultraExplorerBarItem20" Value="Todos os gráficos" />
+	<ConfigValue Variable="&ultraExplorerBarGroup9" Value="Relatórios" />
+	<ConfigValue Variable="&ultraExplorerBarItem21" Value="Importador XML" />
+	<ConfigValue Variable="&ultraExplorerBarItem22" Value="Serviço web" />
+	<ConfigValue Variable="&ultraExplorerBarItem23" Value="Edgecam web (EWEB)" />
+	<ConfigValue Variable="&ultraExplorerBarGroup10" Value="Outros" />
   </FrmTarefas>
+  <FrmOrdens>
+	<ConfigValue Variable="this" Value="" />
+	<ConfigValue Variable="groupBox2" Value="" />
+	<ConfigValue Variable="btnExportar" Value="" />
+	<ConfigValue Variable="udgv" Value="" />
+	<ConfigValue Variable="cms" Value="" />
+	<ConfigValue Variable="btnNew" Value="" />
+	<ConfigValue Variable="btnOpen" Value="" />
+	<ConfigValue Variable="btnEdit" Value="" />
+	<ConfigValue Variable="btnCancelar" Value="" />
+	<ConfigValue Variable="btnComplete" Value="" />
+	<ConfigValue Variable="btnDefineUser" Value="" />
+	<ConfigValue Variable="btnViewDetails" Value="" />
+	<ConfigValue Variable="btnView3D" Value="" />
+	<ConfigValue Variable="btnPdfView" Value="" />
+	<ConfigValue Variable="groupBox1" Value="" />
+	<ConfigValue Variable="cbClientes" Value="" />
+	<ConfigValue Variable="cbxUsarData" Value="" />
+	<ConfigValue Variable="label6" Value="" />
+	<ConfigValue Variable="cbMaquinas" Value="" />
+	<ConfigValue Variable="label5" Value="" />
+	<ConfigValue Variable="dtEntrega" Value="" />
+	<ConfigValue Variable="icbxEstado" Value="" />
+	<ConfigValue Variable="label4" Value="" />
+	<ConfigValue Variable="label3" Value="" />
+	<ConfigValue Variable="txtTrabalho" Value="" />
+	<ConfigValue Variable="label2" Value="" />
+	<ConfigValue Variable="btnPesquisar" Value="" />
+	<ConfigValue Variable="txtOrdem" Value="" />
+	<ConfigValue Variable="label1" Value="" />
+	<ConfigValue Variable="btnRemoveGroup" Value="" />
+	<ConfigValue Variable="splitContainer1" Value="" />
+	<ConfigValue Variable="groupBox3" Value="" />
+	<ConfigValue Variable="tv" Value="" />
+	<ConfigValue Variable="btnExpandePainel" Value="" />
+	<!--Columns names (start with '=' symbol) DO NOT CHANGE-->
+	<ConfigValue Variable="=ultraGridColumn1" Value="" />
+	<ConfigValue Variable="=ultraGridColumn2" Value="" />
+	<ConfigValue Variable="=ultraGridColumn3" Value="" />
+	<ConfigValue Variable="=ultraGridColumn4" Value="" />
+	<ConfigValue Variable="=ultraGridColumn5" Value="" />
+	<ConfigValue Variable="=ultraGridColumn6" Value="" />
+	<ConfigValue Variable="=ultraGridColumn7" Value="" />
+	<ConfigValue Variable="=ultraGridColumn8" Value="" />
+	<ConfigValue Variable="=ultraGridColumn9" Value="" />
+	<ConfigValue Variable="=ultraGridColumn10" Value="" />
+	<ConfigValue Variable="=ultraGridColumn11" Value="" />
+	<ConfigValue Variable="=ultraGridColumn12" Value="" />
+	<ConfigValue Variable="=ultraGridColumn13" Value="" />
+	<ConfigValue Variable="=ultraGridColumn14" Value="" />
+	<ConfigValue Variable="=ultraGridColumn15" Value="" />
+	<ConfigValue Variable="=ultraGridColumn16" Value="" />
+	<ConfigValue Variable="=ultraGridColumn17" Value="" />
+	<ConfigValue Variable="=ultraGridColumn18" Value="" />
+	<ConfigValue Variable="=ultraGridColumn19" Value="" />
+	<ConfigValue Variable="=ultraGridColumn20" Value="" />
+	<ConfigValue Variable="=ultraGridColumn21" Value="" />
+	<ConfigValue Variable="=ultraGridColumn22" Value="" />
+	<ConfigValue Variable="=ultraGridColumn23" Value="" />
+	<ConfigValue Variable="=ultraGridColumn24" Value="" />
+	<ConfigValue Variable="=ultraGridColumn25" Value="" />
+	<ConfigValue Variable="=ultraGridColumn26" Value="" />
+	<ConfigValue Variable="=ultraGridColumn27" Value="" />
+	<ConfigValue Variable="=ultraGridColumn28" Value="" />
+	<ConfigValue Variable="=ultraGridColumn29" Value="" />
+	<ConfigValue Variable="=ultraGridColumn30" Value="" />
+  </FrmOrdens>
+  <FrmOrcamentos>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmOrcamentos>
+  <FrmInventario>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmInventario>
+  <FrmTrabalhos>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmTrabalhos>
+  <FrmMaquinas>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmMaquinas>
+  <FrmUserData>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmUserData>
+  <FrmConfig>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmConfig>
+  <FrmFerramentas>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmFerramentas>
+  <FrmSobre>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmSobre>
+  <FrmCriptomoedas>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmCriptomoedas>
+  <FrmSyneco>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmSyneco>
+  <FrmCalendar>
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="" Value="" />
+	<ConfigValue Variable="=" Value="" />
+  </FrmCalendar>
 </Configuration>
