@@ -1,0 +1,201 @@
+<meta charset="utf-8"/>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>@PRODUCTION_ORDER@</title>
+		<link rel="stylesheet" type="text/css" href="ECMGR_Table.css" />
+		<link rel="stylesheet" type="text/css" href="ECMGR_CustomTextUnderline.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<!--Auxiliary scripts-->
+		<link rel="stylesheet" type="text/javascript" href="ECMGR_ExportTable.js" />
+		<!--Scripts to export table into a PDF-->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+	</head>
+	<body>
+		<form id="form1">
+		
+			<!--
+				https://www.google.com/search?client=opera&hs=0xL&sxsrf=ALeKk02rQ5l-VBRlpkwUFxr3Nrylnl8PrA%3A1593532333530&ei=rV_7XqGAIPCw5OUP5f-7yAc&q=export+html+table+to+pdf+with+formatting+javascript&oq=export+a+html+to+pdf+with+form&gs_lcp=CgZwc3ktYWIQAxgAMgYIABAWEB46BAgjECc6BggjECcQEzoFCAAQsQM6AggAOgQIABBDOgoIABCxAxBGEPkBOgcIABAKEMsBOgQIABAKOgQIABANOgcIABCxAxBDOgcIIxDqAhAnOgUIABDLAVCX2AlYwscKYOLcCmgLcAB4AYABzQKIAfkpkgEIMC4zNS4yLjGYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=psy-ab
+				https://www.aspsnippets.com/Articles/Convert-Export-HTML-Table-to-PDF-file-using-JavaScript.aspx#:~:text=Explanation%3A,PDF%20using%20the%20pdfmake%20plugin.
+			-->
+			<!--<input type="button" id="btnExport" value="Export" onclick="Export()" />-->
+		
+			<!-- Start -->
+			<br/>
+			
+			<!-- Header/SVG Rectangle -->
+			<svg width="100%;" height="120">
+				<rect width="100%" height="120" style="fill:#dddddd; stroke-width:1;" />
+				<text x="50%" y="25%" alignment-baseline="middle" text-anchor="middle" font-size="35" fill="white" stroke="">@COMPANY_NAME@</text>    
+				<text x="25%" y="60%" alignment-baseline="middle" text-anchor="middle" font-size="35" fill="white" stroke="">@ORDER_TYPE@</text>
+				<text x="80%" y="75%" alignment-baseline="middle" text-anchor="middle" font-size="15" fill="white">Ordem de produção: @ORDER_ID@</text>
+				<text x="80%" y="90%" alignment-baseline="middle" text-anchor="middle" font-size="15" fill="white">Data de liberação: @ORDER_DATE_UNLOCK@</text>
+			</svg>
+			
+			<!-- Line breaks -->
+			</br></br>
+			
+			<!-- Title -->
+			<h1 id="customText">Informações do cliente</h1>
+			
+			<!-- Table with customer information -->
+			<table id="tbFullFill">
+				<tr>
+					<td>Número do orçamento/pedido</th>
+					<td>@TRACKING_NUM@</th>
+				</tr>
+				<tr>
+					<td>Empresa</th>
+					<td>@CUSTOMER_NAME@</th>
+				</tr>
+				<tr>
+					<td>Contato</th>
+					<td>@CUSTOMER_CONTACT@</th>
+				</tr>				
+				<tr>
+					<td>Endereço</th>
+					<td>@CUSTOMER_ADDRESS@</th>
+				</tr>
+				<tr>
+					<td>Telefone para contato</th>
+					<td>@CUSTOMER_PHONE@</th>
+				</tr>
+				<tr>
+					<td>E-mail</th>
+					<td>@CUSTOMER_EMAIL@</th>
+				</tr>
+				<tr>
+					<td>Orçamento válido até</th>
+					<td>@CUSTOMER_VALIDUNTIL@</th>
+				</tr>
+				<tr>
+					<td>Estimativa de entrega</th>
+					<td>@CUSTOMER_DELIVERYDATE@</th>
+				</tr>
+			</table>
+			
+			<!-- Line breaks -->
+			</br></br>
+			
+			<!-- Title -->
+			<h1 id="customText">Informações de produção</h1>
+			
+			<!-- Table with customer information -->
+			<table id="tbFullFill">
+				<tr>
+					<td>Ordem de produção</th>
+					<td>@ORDER_ID@</th>
+				</tr>
+				<tr>
+					<td>Origem</th>
+					<td>@ORDER_ORIGIN@</th>
+				</tr>
+				<tr>
+					<td>Quantidade</th>
+					<td>@ORDER_QUANTITY@</th>
+				</tr>
+				<tr>
+					<td>Tempo unitário planejado</th>
+					<td>@ORDER_UNITY_PLAN_TIME@</th>
+				</tr>
+				<tr>
+					<td>Tempo unitário real</th>
+					<td>@ORDER_UNITY_REAL_TIME@</th>
+				</tr>
+				<tr>
+					<td>Estimativa de entrega</th>
+					<td>@ORDER_DELIVERYDATE@</th>
+				</tr>
+			</table>
+			
+			<!-- Line breaks -->
+			</br></br>
+			
+			<!-- Title -->
+			<h1 style="color:#dddddd;">Informações do trabalho</h1>
+			
+			<!-- Table with quote itens -->
+			<table id="tbFullFill">
+				<tr>
+					<th id="tdCentered">Ordem</th>
+					<th id="tdCentered">Descrição do processo</th>
+					<th id="tdCentered">Código do recurso</th>
+					<th id="tdCentered">Recurso</th>
+					<th id="tdCentered">Tempo estimado (em horas)</th>
+					<th id="tdCentered">Responsável</th>
+					<th id="tdCentered">Data estimada p/ execução</th>
+				</tr>
+				<tr>
+					<td id="tdCentered">1</td>
+					<td>Corte do produto bruto na serra</td>
+					<td id="tdCentered">1010</td>
+					<td id="tdCentered">Serra fita 3054</td>
+					<td id="tdCentered">5,3 horas</td>
+					<td id="tdCentered">João</td>
+					<td id="tdCentered">22/06/2021</td>
+				</tr>
+				<tr>
+					<td id="tdCentered">2</td>
+					<td>Usinagem em torno CNC</td>
+					<td id="tdCentered">1011</td>
+					<td id="tdCentered">Romi GL 240</td>
+					<td id="tdCentered">1,3 horas</td>
+					<td id="tdCentered">Paulo</td>
+					<td id="tdCentered">23/06/2021</td>
+				</tr>
+				<tr>
+					<td id="tdCentered">3</td>
+					<td>Usinagem em centro CNC</td>
+					<td id="tdCentered">1012</td>
+					<td id="tdCentered">Romi discovery 1050</td>
+					<td id="tdCentered">5,3 horas</td>
+					<td id="tdCentered">Ronaldo</td>
+					<td id="tdCentered">22/06/2021</td>
+				</tr>
+				<tr>
+					<td id="tdCentered">4</td>
+					<td>Pintura</td>
+					<td id="tdCentered">1013</td>
+					<td id="tdCentered">Centro de pintura 1</td>
+					<td id="tdCentered">2 horas</td>
+					<td id="tdCentered">Fernando</td>
+					<td id="tdCentered">22/06/2021</td>
+				</tr>
+				<tr>
+					<td id="tdCentered">5</td>
+					<td>Inspeção</td>
+					<td id="tdCentered">1014</td>
+					<td id="tdCentered">INSP. CT. 002</td>
+					<td id="tdCentered">3 horas</td>
+					<td id="tdCentered">Maria</td>
+					<td id="tdCentered">23/06/2021</td>
+				</tr>
+				<tr>
+					<td id="tdCentered">6</td>
+					<td>Embalagem</td>
+					<td id="tdCentered">1015</td>
+					<td id="tdCentered">EMB. CT. 001</td>
+					<td id="tdCentered">1 hora</td>
+					<td id="tdCentered">Fernanda</td>
+					<td id="tdCentered">23/06/2021</td>
+				</tr>
+				<tr>
+					<td id="tdCentered">7</td>
+					<td>Envio</td>
+					<td id="tdCentered">1020</td>
+					<td id="tdCentered">Transportadora</td>
+					<td id="tdCentered">1 hora</td>
+					<td id="tdCentered">Pedro</td>
+					<td id="tdCentered">26/06/2021</td>
+				</tr>
+			</table>
+			
+			<!-- Line breaks -->
+			<!-- <br/><br/> -->
+			
+			<!-- Aa -->
+			
+			<!-- <input type="button" value="Imprimir o relatório @REPORT_NAME@" id="btnPrint" /> -->
+		</form>
+	</body>
+</html>
