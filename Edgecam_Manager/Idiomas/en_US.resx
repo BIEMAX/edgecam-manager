@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>is my long string</value><comment>is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FrmLogin_Arquivo_config_nao_existe" xml:space="preserve">
+    <value>Is wasn't possible to find a configuration file in current system. Please, contact the system administrator or configure the server in system parameters.</value>
+  </data>
+  <data name="FrmLogin_Configuracao_nao_localizada" xml:space="preserve">
+    <value>Not found a valid configuration</value>
+  </data>
+  <data name="FrmLogin_Esqueceu_senha" xml:space="preserve">
+    <value>I forgot my password</value>
+  </data>
+  <data name="FrmLogin_Falha_login" xml:space="preserve">
+    <value>User or password is invalid</value>
+  </data>
+  <data name="FrmLogin_Iniciar_sessao" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="FrmLogin_Manter_conectado" xml:space="preserve">
+    <value>Keep me connected</value>
+  </data>
+  <data name="FrmLogin_Senha" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="FrmLogin_Servico_sql_parado" xml:space="preserve">
+    <value>Please, check if the SQL Server service is running.</value>
+  </data>
+  <data name="FrmLogin_Termina_sessao" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="FrmLogin_Usuario" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="FrmLogin_Usuario_desativado" xml:space="preserve">
+    <value>Your user is no longer active</value>
+  </data>
+  <data name="FrmMain_Ajuda" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="FrmMain_AjudaEcMgr" xml:space="preserve">
+    <value>Edgecam Manager help</value>
+  </data>
+  <data name="FrmMain_ExportaTrabalhos" xml:space="preserve">
+    <value>Job exporter</value>
+  </data>
+  <data name="FrmMain_Ferramentas" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="FrmMain_GestoFabrica" xml:space="preserve">
+    <value>Shop floor</value>
+  </data>
+  <data name="FrmMain_GestorFerramentas" xml:space="preserve">
+    <value>Tooling manager</value>
+  </data>
+  <data name="FrmMain_GestorMaquinas" xml:space="preserve">
+    <value>Machine manager</value>
+  </data>
+  <data name="FrmMain_GestorTrabalhos" xml:space="preserve">
+    <value>Job manager</value>
+  </data>
+  <data name="FrmMain_Logoff" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="FrmMain_MenuArq" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="FrmMain_MenuInicio" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="FrmMain_MeusDados" xml:space="preserve">
+    <value>My data</value>
+  </data>
+  <data name="FrmMain_NcEditor" xml:space="preserve">
+    <value>CNCs files</value>
+  </data>
+  <data name="FrmMain_Opcoes" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="FrmMain_Ordens" xml:space="preserve">
+    <value>Production orders</value>
+  </data>
+  <data name="FrmMain_RastrearVendas" xml:space="preserve">
+    <value>Production tracking</value>
+  </data>
+  <data name="FrmMain_Relatorios" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="FrmMain_Sair" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="FrmMain_SobreEcMgr" xml:space="preserve">
+    <value>About Edgecam Manager</value>
+  </data>
+  <data name="FrmMain_TrocarSenha" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="FrmMain_VerificarAtualizacoes" xml:space="preserve">
+    <value>Check updates</value>
+  </data>
+  <data name="FrmOrdem_ColunaAmbiente" xml:space="preserve">
+    <value>Environment</value>
+  </data>
+  <data name="FrmOrdem_ColunaArtigo" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="FrmOrdem_ColunaCliente" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="FrmOrdem_ColunaDataEntrega" xml:space="preserve">
+    <value>Delivery date</value>
+  </data>
+  <data name="FrmOrdem_ColunaDataRequerida" xml:space="preserve">
+    <value>Required date</value>
+  </data>
+  <data name="FrmOrdem_ColunaEstado" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="FrmOrdem_ColunaEstadoOperacao" xml:space="preserve">
+    <value>Operation State</value>
+  </data>
+  <data name="FrmOrdem_ColunaMaterial" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="FrmOrdem_ColunaMqn" xml:space="preserve">
+    <value>Work center</value>
+  </data>
+  <data name="FrmOrdem_ColunaOrdem" xml:space="preserve">
+    <value>Production Order</value>
+  </data>
+  <data name="FrmOrdem_ColunaQtdeRealizada" xml:space="preserve">
+    <value>Made</value>
+  </data>
+  <data name="FrmOrdem_ColunaQtdeSolicitada" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="FrmOrdem_ColunaTrabalho" xml:space="preserve">
+    <value>Job</value>
+  </data>
+  <data name="FrmUserConfigCnns_CnnNotOk" xml:space="preserve">
+    <value>Could not open a connection to SQL</value>
+  </data>
+  <data name="FrmUserConfigCnns_CnnOk" xml:space="preserve">
+    <value>Connection established successfully</value>
+  </data>
+  <data name="FrmUserConfigCnns_Concluido" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="FrmUserConfigCnns_DadoValido" xml:space="preserve">
+    <value>Insert a valid data</value>
+  </data>
+  <data name="FrmUserConfigCnns_EcDb" xml:space="preserve">
+    <value>Edgecam database</value>
+  </data>
+  <data name="FrmUserConfigCnns_EcPs" xml:space="preserve">
+    <value>User password</value>
+  </data>
+  <data name="FrmUserConfigCnns_EcSrv" xml:space="preserve">
+    <value>Edgecam server</value>
+  </data>
+  <data name="FrmUserConfigCnns_EcUs" xml:space="preserve">
+    <value>User for connection</value>
+  </data>
+  <data name="FrmUserConfigCnns_ErroCriarCfg" xml:space="preserve">
+    <value>Error to create a new configuration file</value>
+  </data>
+  <data name="FrmUserConfigCnns_ErroSalvarCfg" xml:space="preserve">
+    <value>Some fields were not properly completed</value>
+  </data>
+  <data name="FrmUserConfigCnns_Gp_Ax" xml:space="preserve">
+    <value>Database server of the Edgecam Manager</value>
+  </data>
+  <data name="FrmUserConfigCnns_Gp_Ec" xml:space="preserve">
+    <value>Database server of the Edgecam</value>
+  </data>
+  <data name="FrmUserConfigCnns_MgDb" xml:space="preserve">
+    <value>Edgecam Manager database</value>
+  </data>
+  <data name="FrmUserConfigCnns_MgSrv" xml:space="preserve">
+    <value>Edgecam Manager server</value>
+  </data>
+  <data name="FrmUserConfigCnns_NaoConcluido" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="FrmUserConfigCnns_Return" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="FrmUserConfigCnns_SalvouCfg" xml:space="preserve">
+    <value>Configurations was saved successfully</value>
+  </data>
+  <data name="FrmUserConfigCnns_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="FrmUserConfigCnns_TestCnn" xml:space="preserve">
+    <value>Test connection</value>
+  </data>
+  <data name="FrmUserConfigCnns_Title" xml:space="preserve">
+    <value>Server configuration</value>
+  </data>
+</root>
