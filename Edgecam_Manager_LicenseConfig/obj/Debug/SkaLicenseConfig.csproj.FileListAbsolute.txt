@@ -1,0 +1,5 @@
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicenseConfig\bin\Debug\SkaLicenseConfig.dll.config
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicenseConfig\bin\Debug\SkaLicenseConfig.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicenseConfig\bin\Debug\SkaLicenseConfig.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicenseConfig\obj\Debug\SkaLicenseConfig.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicenseConfig\obj\Debug\SkaLicenseConfig.pdb

@@ -1,0 +1,74 @@
+﻿Instalando o assembly 'C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.InstallLog
+   assemblypath = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe
+Instalando o serviço Edgecam Manager Background service...
+Criando a origem de EventLog Edgecam Manager Background service no log Application...
+Revertendo o assembly 'C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.InstallLog
+   assemblypath = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe
+Restaurando o log de eventos para o estado anterior da origem Edgecam Manager Background service.
+Ocorreu uma exceção durante a fase de reversão do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Fonte não encontrada, mas alguns ou todos os logs de evento não puderam ser pesquisados. Logs inacessíveis: Security.
+Ocorreu uma exceção durante a fase de reversão da instalação. Essa exceção será ignorada e a reversão continuará. Mas talvez o computador não reverta totalmente para o estado inicial após a conclusão da reversão.
+Instalando o assembly 'C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.InstallLog
+   assemblypath = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe
+Instalando o serviço Edgecam Manager Background service...
+Criando a origem de EventLog Edgecam Manager Background service no log Application...
+Revertendo o assembly 'C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.InstallLog
+   assemblypath = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe
+Restaurando o log de eventos para o estado anterior da origem Edgecam Manager Background service.
+Ocorreu uma exceção durante a fase de reversão do instalador System.Diagnostics.EventLogInstaller.
+System.Security.SecurityException: Fonte não encontrada, mas alguns ou todos os logs de evento não puderam ser pesquisados. Logs inacessíveis: Security.
+Ocorreu uma exceção durante a fase de reversão da instalação. Essa exceção será ignorada e a reversão continuará. Mas talvez o computador não reverta totalmente para o estado inicial após a conclusão da reversão.
+Instalando o assembly 'C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.InstallLog
+   assemblypath = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe
+Instalando o serviço Edgecam Manager Background service...
+Serviço Edgecam Manager Background service foi instalado com êxito.
+Criando a origem de EventLog Edgecam Manager Background service no log Application...
+Confirmando o assembly 'C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.InstallLog
+   assemblypath = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe
+Desinstalando o assembly 'C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.InstallLog
+   assemblypath = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe
+Removendo a origem do EventLog Edgecam Manager Background service.
+Serviço Edgecam Manager Background service está sendo removido do sistema...
+Serviço Edgecam Manager Background service foi removido com êxito do sistema.
+Instalando o assembly 'C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.InstallLog
+   assemblypath = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe
+Instalando o serviço Edgecam Manager Background service...
+Serviço Edgecam Manager Background service foi instalado com êxito.
+Criando a origem de EventLog Edgecam Manager Background service no log Application...
+Confirmando o assembly 'C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.InstallLog
+   assemblypath = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe
+Desinstalando o assembly 'C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe'.
+Parâmetros afetados são:
+   logtoconsole = 
+   logfile = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.InstallLog
+   assemblypath = C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Release\Edgecam_Manager_BackgroundService.exe
+Removendo a origem do EventLog Edgecam Manager Background service.
+Serviço Edgecam Manager Background service está sendo removido do sistema...
+Serviço Edgecam Manager Background service foi removido com êxito do sistema.

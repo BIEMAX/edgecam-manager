@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Configuration>
+  <!--Arquivo de configuração SKA-->
+  <ConfiguracoesGerais>
+    <!--Banco de dados do Edgecam-->
+    <ConfigValue Variable="SERVER_EC" Value="DESKTOP-BLV21J1\SQLEX17" />
+    <ConfigValue Variable="BANCO_EC" Value="Sample_Toolstore_20200" />
+    <ConfigValue Variable="USER_EC" Value="sa" />
+    <ConfigValue Variable="PASS_EC" Value="DD01039582dd" />
+    <!--Banco de dados intermediário-->
+    <ConfigValue Variable="SERVER_AUX" Value="DESKTOP-BLV21J1\SQLEX17" />
+    <ConfigValue Variable="BANCO_AUX" Value="ECMGR_2020R1" />
+    <ConfigValue Variable="USER_AUX" Value="sa" />
+    <ConfigValue Variable="PASS_AUX" Value="DD01039582dd" />
+    <!--Banco de dados de Logs-->
+    <ConfigValue Variable="SERVER_LOG" Value="DESKTOP-BLV21J1\SQLEX17" />
+    <ConfigValue Variable="BANCO_LOG" Value="ECMGR_2020R1_Log" />
+    <ConfigValue Variable="USER_LOG" Value="sa" />
+    <ConfigValue Variable="PASS_LOG" Value="DD01039582dd" />
+    <!--Configurações gerais da aplicação-->
+    <!--<ConfigValue Variable="MANTER_CONECTADO" Value="" />-->
+    <!--<ConfigValue Variable="USUARIO" Value="" />-->
+    <!--<ConfigValue Variable="SENHA" Value="" />-->
+    <ConfigValue Variable="IDIOMA" value="pt-BR"/>
+    <!--Define o tipo de cor que a interface vai ter (DARK ou LIGHT)-->
+    <ConfigValue Variable="THEME" Value="Outlook2013 - Dark Gray.isl"/>
+  </ConfiguracoesGerais>
+</Configuration>

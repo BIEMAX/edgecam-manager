@@ -1,0 +1,5 @@
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_LicenseConfig\bin\Debug\Edgecam_Manager_LicenseConfig.dll.config
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_LicenseConfig\bin\Debug\Edgecam_Manager_LicenseConfig.dll
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_LicenseConfig\bin\Debug\Edgecam_Manager_LicenseConfig.pdb
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_LicenseConfig\obj\Debug\Edgecam_Manager_LicenseConfig.dll
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_LicenseConfig\obj\Debug\Edgecam_Manager_LicenseConfig.pdb

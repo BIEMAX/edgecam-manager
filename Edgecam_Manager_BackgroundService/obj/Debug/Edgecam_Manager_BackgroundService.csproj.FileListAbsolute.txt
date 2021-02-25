@@ -1,0 +1,22 @@
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Debug\Edgecam_Manager_BackgroundService.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Debug\Tulpep.NotificationWindow.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.csprojResolveAssemblyReference.cache
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.EcMgrService.resources
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.ProjectInstaller.resources
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.csproj.GenerateResource.Cache
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Debug\Edgecam_Manager_BackgroundService.exe.config
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\bin\Debug\Edgecam_Manager_BackgroundService.exe
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.exe
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\Edgecam_Manager_BackgroundService\bin\Debug\Edgecam_Manager_BackgroundService.exe.config
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\Edgecam_Manager_BackgroundService\bin\Debug\Edgecam_Manager_BackgroundService.exe
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\Edgecam_Manager_BackgroundService\bin\Debug\Edgecam_Manager_BackgroundService.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.csprojResolveAssemblyReference.cache
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.EcMgrService.resources
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.ProjectInstaller.resources
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.csproj.GenerateResource.Cache
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.exe
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.pdb
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_BackgroundService\bin\Debug\Edgecam_Manager_BackgroundService.exe.config
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.exe
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_BackgroundService\obj\Debug\Edgecam_Manager_BackgroundService.pdb

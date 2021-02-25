@@ -1,0 +1,7 @@
+C:\Users\dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager_Arquive\Edgecam_Manager_Arquive\bin\Debug\Edgecam_Manager_Arquive.dll
+C:\Users\dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager_Arquive\Edgecam_Manager_Arquive\bin\Debug\Edgecam_Manager_Arquive.pdb
+C:\Users\dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager_Arquive\Edgecam_Manager_Arquive\obj\Debug\Edgecam_Manager_Arquive.dll
+C:\Users\dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager_Arquive\Edgecam_Manager_Arquive\obj\Debug\Edgecam_Manager_Arquive.pdb
+C:\Users\dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager_Arquive\Edgecam_Manager_Arquive\obj\Debug\Edgecam_Manager_Arquive.en-US.resources
+C:\Users\dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager_Arquive\Edgecam_Manager_Arquive\obj\Debug\Edgecam_Manager_Arquive.pt-BR.resources
+C:\Users\dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager_Arquive\Edgecam_Manager_Arquive\obj\Debug\Edgecam_Manager_Arquive.csproj.GenerateResource.Cache

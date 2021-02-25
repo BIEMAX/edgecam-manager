@@ -1,0 +1,61 @@
+c:\users\dionei\documents\visual studio 2013\Projects\SkaLicense\SkaLicense\bin\Debug\SkaLicense.dll.config
+c:\users\dionei\documents\visual studio 2013\Projects\SkaLicense\SkaLicense\bin\Debug\SkaLicense.dll
+c:\users\dionei\documents\visual studio 2013\Projects\SkaLicense\SkaLicense\bin\Debug\SkaLicense.pdb
+c:\users\dionei\documents\visual studio 2013\Projects\SkaLicense\SkaLicense\obj\Debug\SkaLicense.dll
+c:\users\dionei\documents\visual studio 2013\Projects\SkaLicense\SkaLicense\obj\Debug\SkaLicense.pdb
+c:\users\dionei\documents\visual studio 2013\Projects\SkaLicense\SkaLicense\obj\Debug\SkaLicense.csprojResolveAssemblyReference.cache
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 3\SkaLicense\bin\Debug\SkaLicense.dll.config
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 3\SkaLicense\bin\Debug\SkaLicense.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 3\SkaLicense\bin\Debug\SkaLicense.pdb
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 3\SkaLicense\obj\Debug\SkaLicense.csprojResolveAssemblyReference.cache
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 3\SkaLicense\obj\Debug\SkaLicense.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 3\SkaLicense\obj\Debug\SkaLicense.pdb
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 4\SkaLicense\bin\Debug\SkaLicense.dll.config
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 4\SkaLicense\bin\Debug\SkaLicense.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 4\SkaLicense\bin\Debug\SkaLicense.pdb
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 4\SkaLicense\obj\Debug\SkaLicense.csprojResolveAssemblyReference.cache
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 4\SkaLicense\obj\Debug\SkaLicense.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 4\SkaLicense\obj\Debug\SkaLicense.pdb
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 5\SkaLicense\bin\Debug\SkaLicense.dll.config
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 5\SkaLicense\bin\Debug\SkaLicense.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 5\SkaLicense\bin\Debug\SkaLicense.pdb
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 5\SkaLicense\obj\Debug\SkaLicense.csprojResolveAssemblyReference.cache
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 5\SkaLicense\obj\Debug\SkaLicense.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 5\SkaLicense\obj\Debug\SkaLicense.pdb
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - 2018 R2 - beta 1\SkaLicense\bin\Debug\SkaLicense.dll.config
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - 2018 R2 - beta 1\SkaLicense\bin\Debug\SkaLicense.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - 2018 R2 - beta 1\SkaLicense\bin\Debug\SkaLicense.pdb
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - 2018 R2 - beta 1\SkaLicense\obj\Debug\SkaLicense.csprojResolveAssemblyReference.cache
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - 2018 R2 - beta 1\SkaLicense\obj\Debug\SkaLicense.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - 2018 R2 - beta 1\SkaLicense\obj\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\SkaLicense\bin\Debug\SkaLicense.dll.config
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\SkaLicense\bin\Debug\SkaLicense.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\SkaLicense\bin\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\SkaLicense\obj\Debug\SkaLicense.csprojResolveAssemblyReference.cache
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\SkaLicense\obj\Debug\SkaLicense.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 2\SkaLicense\obj\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 5\SkaLicense\bin\Debug\SkaLicense.dll.config
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 5\SkaLicense\bin\Debug\SkaLicense.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 5\SkaLicense\bin\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 5\SkaLicense\obj\Debug\SkaLicense.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 5\SkaLicense\obj\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2018 R2 - beta 5\SkaLicense\obj\Debug\SkaLicense.csprojResolveAssemblyReference.cache
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R1 - beta 1\SkaLicense\bin\Debug\SkaLicense.dll.config
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R1 - beta 1\SkaLicense\bin\Debug\SkaLicense.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R1 - beta 1\SkaLicense\bin\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R1 - beta 1\SkaLicense\obj\Debug\SkaLicense.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R1 - beta 1\SkaLicense\obj\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R1 - beta 1\SkaLicense\obj\Debug\SkaLicense.csprojResolveAssemblyReference.cache
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\SkaLicense\bin\Debug\SkaLicense.dll.config
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\SkaLicense\bin\Debug\SkaLicense.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\SkaLicense\bin\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\SkaLicense\obj\Debug\SkaLicense.csprojResolveAssemblyReference.cache
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\SkaLicense\obj\Debug\SkaLicense.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2019 R2 - beta 1\SkaLicense\obj\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicense\bin\Debug\SkaLicense.dll.config
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicense\bin\Debug\SkaLicense.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicense\bin\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicense\obj\Debug\SkaLicense.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicense\obj\Debug\SkaLicense.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicense\bin\Debug\Newtonsoft.Json.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaLicense\obj\Debug\SkaLicense.csprojResolveAssemblyReference.cache
