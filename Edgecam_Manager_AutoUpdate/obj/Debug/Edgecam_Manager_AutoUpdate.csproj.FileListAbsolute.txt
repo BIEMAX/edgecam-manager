@@ -1,0 +1,9 @@
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_AutoUpdate\bin\Debug\Edgecam_Manager_AutoUpdate.dll
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_AutoUpdate\bin\Debug\Edgecam_Manager_AutoUpdate.pdb
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_AutoUpdate\obj\Debug\Edgecam_Manager_AutoUpdate.csprojResolveAssemblyReference.cache
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_AutoUpdate\obj\Debug\Edgecam_Manager_AutoUpdate.FrmDownloading.resources
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_AutoUpdate\obj\Debug\Edgecam_Manager_AutoUpdate.FrmUpdate.resources
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_AutoUpdate\obj\Debug\Edgecam_Manager_AutoUpdate.Properties.Resources.resources
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_AutoUpdate\obj\Debug\Edgecam_Manager_AutoUpdate.csproj.GenerateResource.Cache
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_AutoUpdate\obj\Debug\Edgecam_Manager_AutoUpdate.dll
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_AutoUpdate\obj\Debug\Edgecam_Manager_AutoUpdate.pdb
