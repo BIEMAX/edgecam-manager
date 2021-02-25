@@ -1,0 +1,15 @@
+c:\users\dionei\documents\visual studio 2013\Projects\Edgecam_Manager_Random\Edgecam_Manager_Random\bin\Debug\Edgecam_Manager_Random.dll
+c:\users\dionei\documents\visual studio 2013\Projects\Edgecam_Manager_Random\Edgecam_Manager_Random\bin\Debug\Edgecam_Manager_Random.pdb
+c:\users\dionei\documents\visual studio 2013\Projects\Edgecam_Manager_Random\Edgecam_Manager_Random\obj\Debug\Edgecam_Manager_Random.csprojResolveAssemblyReference.cache
+c:\users\dionei\documents\visual studio 2013\Projects\Edgecam_Manager_Random\Edgecam_Manager_Random\obj\Debug\Edgecam_Manager_Random.dll
+c:\users\dionei\documents\visual studio 2013\Projects\Edgecam_Manager_Random\Edgecam_Manager_Random\obj\Debug\Edgecam_Manager_Random.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\Edgecam_Manager_Random\bin\Debug\Edgecam_Manager_Random.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\Edgecam_Manager_Random\bin\Debug\Edgecam_Manager_Random.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\Edgecam_Manager_Random\obj\Debug\Edgecam_Manager_Random.csprojResolveAssemblyReference.cache
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\Edgecam_Manager_Random\obj\Debug\Edgecam_Manager_Random.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\Edgecam_Manager_Random\obj\Debug\Edgecam_Manager_Random.pdb
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_Random\bin\Debug\Edgecam_Manager_Random.dll
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_Random\bin\Debug\Edgecam_Manager_Random.pdb
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_Random\obj\Debug\Edgecam_Manager_Random.csprojResolveAssemblyReference.cache
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_Random\obj\Debug\Edgecam_Manager_Random.dll
+C:\@Backup\Code\C#\EcMgr\Edgecam_Manager_Random\obj\Debug\Edgecam_Manager_Random.pdb
