@@ -1,0 +1,1331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADICIONA_HISTORICO_ORCAMENTOS" xml:space="preserve">
+    <value>INSERT INTO HistoricoModOrcamentos (IdOrcamento, Versao, InfoModificacoes, UsuarioResp, DtModificacao)
+			VALUES (@ID, @VERSAO, @INFO, @USR, GETDATE());</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_NewSim'</comment>
+  </data>
+  <data name="ADICIONA_HISTORICO_ORDENS" xml:space="preserve">
+    <value>insert into HistoricoModOrdens (IdOrdem, InfoModificacoes, UsuarioResp, DtModificacao)
+values (@IDORDEM, @INFO, @USR, GETDATE());</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos_New'</comment>
+  </data>
+  <data name="ADICIONA_HISTORICO_TRABALHOS" xml:space="preserve">
+    <value>insert into HistoricoModTrabalhos (IdJob, InfoModificacoes, UsuarioResp, DtModificacao)
+values (@IDJOB, @INFO, @USR, GETDATE());</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos_New'</comment>
+  </data>
+  <data name="ADICIONA_IMPOSTOS_MARKUP" xml:space="preserve">
+    <value>INSERT INTO MarkupImpostos ([IdImposto],[NomeImposto],[ValorImposto],[DtCriacao],[UsuarioCriacao])
+					VALUES (@ID, @NOME, @VALOR, GETDATE(), @USR);</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_MarkupNew'</comment>
+  </data>
+  <data name="ATIVA_CAMPO_EXPORTACAO" xml:space="preserve">
+    <value>UPDATE ConfigOrdensExportar SET Ativo = 1 where id = @ID</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Importação de ordens de produção'</comment>
+  </data>
+  <data name="ATIVA_CAMPO_IMPORTACAO" xml:space="preserve">
+    <value>UPDATE ConfigOrdensImportar SET Ativo = 1 where id = @ID</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Importação de ordens de produção'</comment>
+  </data>
+  <data name="ATUALIZA_CADASTRO_USUARIO" xml:space="preserve">
+    <value>update Usuarios set Email = @USREMAIL, Cargo = @POSITION, Gestor = @BOSS, UnidadeOrg = @UNI where id = @ID</value>
+    <comment>utilizado no formulário 'FrmUser_Data'</comment>
+  </data>
+  <data name="ATUALIZA_CAMPO_EXPORTACAO" xml:space="preserve">
+    <value>UPDATE ConfigOrdensExportar SET NomeImportar = @NOME_XML, AceitarValoresVazios = @ACEITAR_NULL, ValorPadrao = @DEFAULT, DtUltimaMod = @DTM WHERE id = @ID</value>
+    <comment>Utilizado no formulário 'FrmConfig_CamposExportar'</comment>
+  </data>
+  <data name="ATUALIZA_CAMPO_IMPORTACAO" xml:space="preserve">
+    <value>UPDATE ConfigOrdensImportar SET NomeImportar = @NOME_XML, AceitarValoresVazios = @ACEITAR_NULL, ValorPadrao = @DEFAULT, DtUltimaMod = @DTM WHERE id = @ID</value>
+    <comment>Utilizado no formulário 'FrmConfig_CamposImportar'</comment>
+  </data>
+  <data name="ATUALIZA_COLUNA" xml:space="preserve">
+    <value>ALTER TABLE @TABELA ALTER COLUMN @COLUNA @TIPO;</value>
+  </data>
+  <data name="ATUALIZA_CONFIGURACAO_NOTIFICACOES" xml:space="preserve">
+    <value>UPDATE ConfigNotificacoes SET	MostrarNotificacoes = @MOSTRAR,
+								Tempo = @TEMPO,
+								TempoAnimacao = @TEMPO_ANIMACAO,
+								NotifyNovasOrdens = @ORDENS,
+								NotifyNovasOrdensErro = @ORDENS_ERRO,
+								NotifyNovosOrçamentos = @ORCAMENTOS,
+								NotifyInventario = @INVENTARIO,
+								NotifyEstoqueMinimo = @ESTOQUE,
+								NotifyOrdensAtrasadas = @ORDENS_ATRASADAS,
+								DtUltimaMod = @DATA_ULTMOD
+WHERE id = @ID</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Notificações'</comment>
+  </data>
+  <data name="ATUALIZA_ESTADO_ESTOQUE_TOOL" xml:space="preserve">
+    <value>update InventarioFerramentas set EstadoEstoque = @ESTADO where id = @ID;</value>
+    <comment>Utilizado no formulário 'FrmInventarios_EstTool'</comment>
+  </data>
+  <data name="ATUALIZA_ESTADO_ORDEM" xml:space="preserve">
+    <value>UPDATE Ordens SET Estado = 3 WHERE id = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="ATUALIZA_FOTO_USUARIO" xml:space="preserve">
+    <value>update Usuarios set Imagem = CONVERT(varbinary(max),@IMG) where id = @ID</value>
+    <comment>Utilizado no formulário 'FrmUserData'</comment>
+  </data>
+  <data name="ATUALIZA_ORDEM_USUARIO_NAO_ESTA_TRABALHANDO" xml:space="preserve">
+    <value>UPDATE Ordens SET IsOpened = 0, UsuarioTrabalhando = '', TempoGastoPrg = @TMP WHERE id = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="ATUALIZA_ORDEM_USUARIO_TRABALHANDO" xml:space="preserve">
+    <value>UPDATE Ordens SET IsOpened = 1, UsuarioTrabalhando = @USER, Estado = 2 WHERE id = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="ATUALIZA_ORDENS_COMO_ATRASADAS" xml:space="preserve">
+    <value>update Ordens set Estado = 7 where id in ({0})</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="ATUALIZA_QTDE_ESTOQUE_TOOL" xml:space="preserve">
+    <value>DECLARE @QTDE_ATUAL AS INTEGER = (SELECT QuantidadeEstoque FROM InventarioFerramentas WHERE IdTool = @ID);
+
+UPDATE InventarioFerramentas set QuantidadeEstoque = @QTDE_ATUAL + @NEWQTDE where IdTool = @ID;
+
+SELECT QuantidadeEstoque from InventarioFerramentas WHERE IdTool = @ID</value>
+    <comment>Utilizado no formulário 'FrmInventarios_MovTool'</comment>
+  </data>
+  <data name="ATUALIZA_REFERENCIA_AUTOMATICA" xml:space="preserve">
+    <value>update ConfigReferenciasAutomaticas 
+set Tabela=@TBL, 
+Coluna=@CLM, 
+Prefixo=@PRE, 
+Incremento=@INC, 
+ValorInicial=@VI, 
+ValorFinal=@VF, 
+ContadorAtual=@VA, 
+InserirZeros=@INSZEROS, 
+ZerosAesquerda=@ESQ, 
+ZerosAdireita=@DIR, 
+NumZerosInserir=@NUMZEROS, 
+UltDataMod=@DT
+where Id=@ID</value>
+  </data>
+  <data name="ATUALIZA_SENHA_USUARIO" xml:space="preserve">
+    <value>UPDATE Usuarios SET Senha = @PASS where Login = @USER</value>
+    <comment>Utilizado no formulário 'FrmLogin_NewPass'</comment>
+  </data>
+  <data name="ATUALIZA_TAREFA" xml:space="preserve">
+    <value>update Tarefas set Assunto = @ASSUNTO, Instrucoes = @INSTRU, TipoTarefa = @TIPO, PrioridadeTarefa = @PRIORIDADE, DtInicio = @DTINICIO, DtLimite = @DTFIM,
+				   DtUltimaMod = @DTULTMOD, UsuarioUltimaMod = @USRULTMOD where id = @ID</value>
+    <comment>Utilizado no formulário FrmTarefas_New</comment>
+  </data>
+  <data name="ATUALIZA_VALOR_CONTADOR_REFERENCIA_AUTOMATICA" xml:space="preserve">
+    <value>update ConfigReferenciasAutomaticas set ContadorAtual = @NEWVALUE where Tabela = @TBL and Coluna = @CLM</value>
+  </data>
+  <data name="BUSCA_NOVO_VALOR_CONTADOR_REFERENCIA_AUTOMATICA" xml:space="preserve">
+    <value>select	ContadorAtual + Incremento as 'ContadorAtual',
+		Prefixo,
+		InserirZeros,
+		ZerosAesquerda,
+		ZerosAdireita,
+		NumZerosInserir
+from ConfigReferenciasAutomaticas 
+where Tabela = @TBL and Coluna = @CLM</value>
+  </data>
+  <data name="CADASTRA_CLIENTE" xml:space="preserve">
+    <value>INSERT INTO Clientes (NomeEmpresa, Setor, Endereco, Cep, Cidade, Estado, Pais, CNPJ, NomeInterno, Telefone, Email, 
+					  IsCliente, IsFornecedor, IsDistribuidor, UsuarioCriacao, DtCriacao, UsuarioUltimaMod, DtUltimaMod)
+			  VALUES (@NOME, @S, @E, @C, @CIDADE, @UF, @PAIS, @CNPJ, @NI, @T, @EMAIL,
+					  @ISCLIENTE, @ISFORNECEDOR, @ISDISTRIBUIDOR, @USR, GETDATE(), @USR, GETDATE());</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_NewSim'</comment>
+  </data>
+  <data name="CADASTRA_CONTATO_CLIENTE" xml:space="preserve">
+    <value>INSERT INTO ContatosClientes (Nome, SobreNome, Setor, Email, TelefoneComercial, TelefoneCelular, Cliente, 
+							  Cidade, Estado, Pais, Ativo, DtCriacao, UsuarioCriacao, DtUltimaMod, UsuarioUltMod)
+					  VALUES (@N, @S, @SETOR, @EMAIL, @TELCOM, @TELCEL, @CLT,
+							  @CIDADE, @ESTADO, @PAIS, 1, GETDATE(), @USR, GETDATE(), @USR);</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_NewSim'</comment>
+  </data>
+  <data name="CADASTRA_CUSTOS_DETALHADOS_ORCAMENTOS" xml:space="preserve">
+    <value>INSERT INTO OrcamentosDetaCustos (IdOrcamento, Descricao, Tipo, Valor, Versao, DtCriacao, UsuarioCriacao)
+			VALUES (@ID, @DESC, @TIPO, @VALOR, @VER, GETDATE(), @USR)</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_NewSim'</comment>
+  </data>
+  <data name="CADASTRA_INVENTARIO_FERRAMENTAS" xml:space="preserve">
+    <value>INSERT INTO InventarioFerramentas ([IdTool],[DescricaoTool],[TipoTool],[SubTipoTool],[UnidadeMedida],[TipoGestaoVidaUtil],[TempoVidaUtil],
+								   [TemValidade],[DataValidade],[Fornecedor],[CustoUnitario],[TempoReceber],[QuantidadeEstoque],[EstoqueMinimo],
+								   [ParaVenda],[ParaFabricacao],[ParaUsoInterno],[EstadoEstoque],[Unidade],[Armazem],[DadosAdicionais],[DtCriacao],
+								   [UsuarioCriacao],[DtUltimaMod],[UsuarioUltimaMod])
+						   VALUES (@ID, @DEC, @TP, @SBTP, @UN, @TPGESTAO, @TMP,
+								   @HASVAL, @DTVAL, @PROVIDER, @CUSTO, @TMP_RECEIVE, @QTDE_EST, @EST_MIN,
+								   @FORSALE, @FORPRODUCTION, @FORINTERN, @ESTADO, @UNIORG, @ARM, @AUX, GETDATE(),
+								   @USRCRT, GETDATE(), @USRMOD)
+
+insert into HistoricoModInventarioFerramentas (IdTool, InfoModificacoes, UsuarioResp, DtModificacao)
+values (@ID, @INFO, @USRCRT, GETDATE())</value>
+    <comment>Utilizado no formulário 'FrmInventarios_New_Tool'</comment>
+  </data>
+  <data name="CADASTRA_ITENS_ORCAMENTO" xml:space="preserve">
+    <value>INSERT INTO OrcamentosItens (IdOrcamento, IdProduto, IdTipoItemOrc, NomeTipoItemOrc, DescTipoItemOrc, 
+							 CaminhoWin, GeoLoc, Descricao, CustoUnitario ,CustoTotal, DescontoPadrao,
+							 Quantidade, Observacao, TempoProcesso, TempoTotal, Ativo, DtCriacao,
+							 UsuarioCriacao, DtUltimaMod, UsuarioUltMod)
+					 VALUES (@IDORC, @IDPROD, @IDTIPO, @NOME, @DESCITEM,
+							 @CAMIWIN, @GEO, @DESC, @CUSUNI, @CUSTOT, @DESCONTO,
+							 @QTDE, @OBS, @TEMPOU, @TEMPOT, 1, GETDATE(),
+							 @USR, GETDATE(), @USR);</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_NewSim'</comment>
+  </data>
+  <data name="CADASTRA_MOV_EST_INVENTARIO_TOOL" xml:space="preserve">
+    <value>insert into HistoricoModInventarioFerramentas (IdTool, InfoModificacoes, UsuarioResp, DtModificacao)
+values (@TOOLID, @INFO, @USR, GETDATE());
+
+insert into MovimentoInventariosFerramentas (IdTool, Acao, Motivo, Quantidade, Fornecedor, Unidade, Armazem, Lote, Descricao, DtCriacao, UsuarioCriacao)
+values (@TOOLID, @ACAO, @MOTIVO, @QTDE, @FOR, @UNI, @ARM, @LOTE, @DES, GETDATE(), @USR)</value>
+    <comment>Utilizado no formulário 'FrmInventarios_EstTool'</comment>
+  </data>
+  <data name="CADASTRA_NOVA_COLUNA" xml:space="preserve">
+    <value>ALTER TABLE @TABELA ADD @COLUNA @TIPO NULL DEFAULT @VALOR_DEFAULT</value>
+    <comment>Utilizado no formulário 'FrmConfig_AdicionaColuna'</comment>
+  </data>
+  <data name="CADASTRA_NOVA_FERRAMENTA" xml:space="preserve">
+    <value>insert into PresetsFerramentas (id_Mqn, ToolName, ToolPosition, ToolPreset, ToolDiameter, ToolCoolant, ToolInsert, ToolEnvironment, ToolType)
+					    values (@idMqn, @name, @position, @preset, @diam, @coolant, @insert, @envi, @type)</value>
+    <comment>Utilizado no formulário 'FrmMqns_New'</comment>
+  </data>
+  <data name="CADASTRA_NOVA_MAQUINA" xml:space="preserve">
+    <value>insert into Maquinas (NomeMaquina,MqnAtiva,CaminhoPosCompilado,CaminhoPosCgd,CaminhoCnc,Ambiente,VersaoEcPos,
+					  Tecnologia,CustoHoraMqn,CustoHoraHomem,Descricao,UnidadeFabril,DadosAux1,DadosAux2,DadosAux3)
+			  values (@NOME, @ATIVO, @MCP, @CGD, @CNC, @ENV, @VER,
+					  @EIXO, @HORAMQN, @HORAHM, @DESC, @UNI, @DA1, @DA2, @DA3);</value>
+    <comment>Utilizado no formulário 'FrmMqns_New'</comment>
+  </data>
+  <data name="CADASTRA_NOVA_ORDEM_PRODUCAO" xml:space="preserve">
+    <value>INSERT INTO Ordens (OrdemProducao, PedidoVenda, Cliente, Material, UsuarioResp, Ambiente, Estado, NomePeca, CaminhoPeca, EstadoOperacao, CentroTrabalho, Trabalho, 
+					QuantidadeSolicitada, QuantidadeRealizada, DataRequerida, DataEntrega, Descricao, DadosAux1, DadosAux2, DadosAux3, DadosAux4,
+					DadosAux5, DadosAux6, DadosAux7, DadosAux8, IsOpened, UsuarioTrabalhando, UsuarioCriacao, DtCriacao, UsuarioUltimaMod, DtUltimaMod)
+			values (@ORDEM, @PEDIDO, @CLIENTE, @MAT, @USR, @AMBIENTE, @ESTADO, @PECA, @DIRPECA, @ESTOP, @CT, @JOB,
+					@QTDESOL, @QTDEREA, @DTREQ, @DTENT, @DESC, @DA1, @DA2, @DA3, @DA4,
+					@DA5, @DA6, @DA7, @DA8, 0, '', @USR_CRT, @DT_CRT, @USR_ULT_MOD, @DT_ULT_MOD);
+
+select top 1 id from Ordens order by id desc</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="CADASTRA_NOVA_REFERENCIA_AUTOMATICA" xml:space="preserve">
+    <value>insert into ConfigReferenciasAutomaticas (Tabela, Coluna, Prefixo, Incremento, ValorInicial, ValorFinal, ContadorAtual, InserirZeros, ZerosAesquerda, ZerosAdireita, NumZerosInserir, UltDataMod)
+								  values (@TBL, @CLM, @PRE, @INC, @VI, @VF, @VA, @INSZEROS, @ESQ, @DIR, @NUMZEROS, @DT);</value>
+  </data>
+  <data name="CADASTRA_NOVA_TAREFA" xml:space="preserve">
+    <value>INSERT INTO Tarefas (Assunto, Instrucoes, TipoTarefa, PrioridadeTarefa, DtInicio, DtLimite, DtCriacao, UsuarioDesignado, UsuarioSolicitante, ExecucaoRecursiva, Lido, Completo)
+			VALUES	(@ASSUNTO, @INSTRU, @TIPO, @PRIORIDADE, @DTINICIO, @DTFIM, @DTCRIACAO, @USR, @USRSOLICITANTE, 0, 0, 0)</value>
+    <comment>Utilizado no formulário 'FrmTarefas_New'</comment>
+  </data>
+  <data name="CADASTRA_NOVA_TARIFA" xml:space="preserve">
+    <value>insert into Tarifas (Tarifa, Descricao, Prioridade, PorcentagemTarifa, PorcentagemLucro, TemValidade, TarifaValidaAte, 
+					 CtrlVersao, Versao, DtCriacao, UsuarioCriacao, DtUltimaMod, UsuarioUltimaMod)
+			values  (@NOME, @DESC, @PRIO, @VALOR, @LUCRO, @HASVALIDITY, @DTEXPIRY,
+					 @CTRLVER, @VER, GETDATE(), @USR, GETDATE(), @USR);
+
+select top 1 id from Tarifas order by id desc</value>
+    <comment>Utilizado no formulário 'FrmTarifas_New'</comment>
+  </data>
+  <data name="CADASTRA_NOVO_ARQUIVO_AUXILIAR" xml:space="preserve">
+    <value>INSERT INTO Arquivos (CaminhoArquivo, Extensao, ArquivoExiste, Ativo, UsuarioResp, DtCadastro) VALUES (@PATH, @EXT, 1, 1, @USR, GETDATE());</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="CADASTRA_NOVO_CAMPO_EXPORTAR" xml:space="preserve">
+    <value>INSERT INTO ConfigOrdensExportar (NomeCampo, NomeExportar, Ativo, AceitarValoresVazios, ValorPadrao, UsuarioResp, DtCriacao, DtUltimaMod)
+     VALUES (@NOME_DB, @NOME_XML, @ATIVO, @ACEITAR_NULL, @DEFAULT, @USR, @DTC, @DTM)</value>
+    <comment>Utilizado no formulário 'FrmConfig_CamposExportar'</comment>
+  </data>
+  <data name="CADASTRA_NOVO_CAMPO_IMPORTAR" xml:space="preserve">
+    <value>INSERT INTO ConfigOrdensImportar (NomeCampo, NomeImportar, Ativo, AceitarValoresVazios, ValorPadrao, UsuarioResp, DtCriacao, DtUltimaMod)
+     VALUES (@NOME_DB, @NOME_XML, @ATIVO, @ACEITAR_NULL, @DEFAULT, @USR, @DTC, @DTM)</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Importação de ordens de produção'</comment>
+  </data>
+  <data name="CADASTRA_NOVO_CUSTO_ADICIONAL" xml:space="preserve">
+    <value>insert into CustosAdicionais (CustoAdicional, CustoUnitario, QuantidadePadrao, Ativo, UsuarioResp, DtCadastro)
+values (@DESC, @CUSTO, @QTDE, 1, @USR, GETDATE())</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_CustosNew'</comment>
+  </data>
+  <data name="CADASTRA_NOVO_DADO_AUXILIAR" xml:space="preserve">
+    <value>insert into DadosAuxiliares (DadoAuxiliar, Ativo, UsuarioResp, DtCadastro) values (@DADOAUX, 1, @USR, GETDATE())</value>
+    <comment>Utilizado no formulário 'FrmDadosAuxiliares_New'</comment>
+  </data>
+  <data name="CADASTRA_NOVO_FILTRO_INTERFACE" xml:space="preserve">
+    <value>INSERT INTO [dbo].[Filtros] ([Interface],[Modulo],[Usuario],[IdUsuario],[NomeFiltro],[Private],
+						     [Filters],[DtCriacao],[DtUltModificacao])
+					VALUES   (@INTER, @MOD, @USR, @ID, @NAME, @PRIV,
+						      @FILTERS, GETDATE(), GETDATE());</value>
+    <comment>Utilizado no formulário 'FrmFiltro_New'</comment>
+  </data>
+  <data name="CADASTRA_NOVO_IMPOSTO" xml:space="preserve">
+    <value>insert into Impostos (Imposto, Descricao, Prioridade, TipoImposto, ValorImposto, TipoCobrancaImposto, TemValidade, ImpostoValidaAte, 
+					 CtrlVersao, Versao, DtCriacao, UsuarioCriacao, DtUltimaMod, UsuarioUltimaMod)
+			values  (@NOME, @DESC, @PRIO, @TIPO, @VALOR, @TIPO_VALOR, @HASVALIDITY, @DTEXPIRY,
+					 @CTRLVER, @VER, GETDATE(), @USR, GETDATE(), @USR);
+
+select top 1 id from Impostos order by id desc</value>
+    <comment>Utilizado no formulário 'FrmImpostos_New'</comment>
+  </data>
+  <data name="CADASTRA_NOVO_MARKUP" xml:space="preserve">
+    <value>INSERT INTO Markup ([Nome],[MargemLucro],[Markup],[MarkDown],[MultiplicadorValor],[MultiplicadorPercentual],
+					[Ativo],[Visivel],[DtCriacao],[UsuarioCriacao])
+			VALUES (@NOME, @MARGEM, @MK, @MKDOWN, @MUL, @MULPER,
+					1, 1, GETDATE(), @USR);
+
+SELECT TOP 1 id FROM Markup order by id desc</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_MarkupNew'</comment>
+  </data>
+  <data name="CADASTRA_NOVO_ORCAMENTO" xml:space="preserve">
+    <value>INSERT INTO [dbo].[Orcamentos] ([Orcamento],[Cliente],[Contato],[Cidade],[UF],[Pais],[EstadoOrcamento],[TipoVisi],
+								[IdTipoOrcamento],[TipoOrcamento],[IdTipoPag],[NomePag],[OrcOrigem],[IdMoeda],[NomeMoeda],
+								[ValorMoeda],[PossuiDesconto],[ValorDesconto],[FreteIncluso],[ValorFrete],[TipoVenda],[ValorSomarVenda],
+								[ValorTotal],[ValorTotalComDesconto],[Vendedor],[Orcamentista],[DtCotacao],[DtEmissao],[DtValidade],[DtPrevEntrega],[Versao],[Ativo],
+								[UsuarioCriacao],[DtCriacao],[UsuarioUltMod],[DtUltimaMod])
+						VALUES (@ORC, @CLT, @CONT, @CIDADE, @UF, @PAIS, @EST, @VISI,
+								@IDTIPO, @TIPOORC, @IDPAG, @NOMEPAG, @ORCORG, @IDMOEDA, @MOEDA,
+								@VALORMOEDA, @HASD, @VALORDES, @HASF, @VALORFRETE, @TIPOVENDA, @VALORSOMAR,
+								@VALORTOTAL, @VALORDESC, @VENDEDOR, @ORCAMENTISTA, @DTCOTACAO, @DTEMISS, @DTVALI, @DTPREVENTREGA, @VER, 1,
+								@USR, GETDATE(), @USR, GETDATE());
+
+SELECT TOP 1 ID FROM Orcamentos ORDER BY ID DESC</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_NewSim'</comment>
+  </data>
+  <data name="CADASTRA_NOVO_TIPO_ORCAMENTO" xml:space="preserve">
+    <value>INSERT INTO TiposOrcamentos (Nome, Descricao, Categoria, Ativo, DtCriacao, UsuarioResp)
+				     VALUES (@NOME, @DESC, @CAT, 1, GETDATE(), @USR);
+
+SELECT top 1 * FROM TiposOrcamentos ORDER BY id DESC</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_NewQuoteType'</comment>
+  </data>
+  <data name="CADASTRA_SOLI_NEW_USER" xml:space="preserve">
+    <value>INSERT INTO [dbo].[UsuariosSolicitados] ([Nome],[Sobrenome],[Area],[Gestor],[Email],[Ramal],
+										 [UnidadeOrg],[DtReq],[Viewed])
+								VALUES  (@NOME, @SOBREN, @AREA, @GESTOR, @EMAIL, @RAMAL,
+										 @UNID, GETDATE(), 0);
+
+select top 1 id from UsuariosSolicitados order by id desc</value>
+    <comment>Utilizado no formulário 'FrmLogin_Req'</comment>
+  </data>
+  <data name="CANCELA_ORCAMENTO_POR_ID" xml:space="preserve">
+    <value>UPDATE Orcamentos SET EstadoOrcamento = 5, Ativo = 0 WHERE ID = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos'</comment>
+  </data>
+  <data name="CANCELA_ORDEM_DE_PRODUCAO_POR_ID" xml:space="preserve">
+    <value>UPDATE Ordens SET Estado = 6 WHERE ID = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="CANCELA_ORDEM_DE_PRODUCAO_POR_TRABALHO" xml:space="preserve">
+    <value>declare @IDORDEM as integer = (select id from Ordens where Trabalho = @JOBNAME);
+
+insert into HistoricoModOrdens (IdOrdem, InfoModificacoes, UsuarioResp, DtModificacao)
+values (@IDORDEM, @INFO, @USR, GETDATE());
+
+update Ordens set Estado = 6 where Trabalho = @JOBNAME</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos'</comment>
+  </data>
+  <data name="CONCLUI_TAREFA" xml:space="preserve">
+    <value>update Tarefas set Completo = 1, Lido = 1 where id = @IDTASK</value>
+    <comment>Utilizado no formulário 'FrmTarefas'</comment>
+  </data>
+  <data name="CONSULTA_ARMAZENS" xml:space="preserve">
+    <value>select distinct NomeArmazem from Armazens</value>
+    <comment>Utilizado no formulário 'FrmInventarios_New_Tool'</comment>
+  </data>
+  <data name="CONSULTA_ARQUIVOS_FOR_SELECAO" xml:space="preserve">
+    <value>select	id,
+		CaminhoArquivo as 'Arquivo',
+		Extensao,
+		ArquivoExiste,
+		Ativo as 'Ativo_Db',
+		UsuarioResp,
+		DtCadastro,
+		'Selecionar' as 'Selecionar'
+from Arquivos
+where CaminhoArquivo != ''</value>
+    <comment>Utilizado no formulário 'FrmArquivos_Seleciona'</comment>
+  </data>
+  <data name="CONSULTA_ARQUIVOS_POR_ID" xml:space="preserve">
+    <value>select	id,
+		CaminhoArquivo as 'Arquivo',
+		Extensao,
+		ArquivoExiste,
+		Ativo as 'Ativo_Db',
+		UsuarioResp,
+		DtCadastro
+from Arquivos
+where CaminhoArquivo != ''</value>
+    <comment>Utilizado no formulário 'FrmArquivos_Seleciona'</comment>
+  </data>
+  <data name="CONSULTA_ARQUIVOS_POR_ID_ORDEM" xml:space="preserve">
+    <value>select	Arquivos.id,
+		CaminhoArquivo as 'Arquivo',
+		Extensao,
+		ArquivoExiste,
+		Ativo as 'Ativo_Db',
+		UsuarioResp,
+		DtCadastro
+from Arquivos
+	inner join ArquivosOrdens
+		on Arquivos.id  = ArquivosOrdens.IdArquivo
+where ArquivosOrdens.IdOrdem = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="CONSULTA_ARTIGOS" xml:space="preserve">
+    <value>select * from Artigos</value>
+    <comment>Utilizado no formulário 'FrmSelectParts'</comment>
+  </data>
+  <data name="CONSULTA_CAMPOS_CONFIGURADOS_EXPORTACAO" xml:space="preserve">
+    <value>select distinct NomeCampo from ConfigOrdensExportar</value>
+    <comment>Utilizado no formulário 'FrmConfig_CamposExportar'</comment>
+  </data>
+  <data name="CONSULTA_CAMPOS_CONFIGURADOS_IMPORTACAO" xml:space="preserve">
+    <value>select distinct NomeCampo from ConfigOrdensImportar</value>
+    <comment>utilizado no formulário 'FrmConfig_CamposImportar'</comment>
+  </data>
+  <data name="CONSULTA_CAMPOS_EXPORTAR" xml:space="preserve">
+    <value>SELECT	id,
+		NomeCampo AS 'Nome do campo',
+		NomeExportar AS 'Nome do elemento para Exportação',
+		Ativo AS 'Ativo_Db',
+		AceitarValoresVazios,
+		ValorPadrao
+FROM ConfigOrdensExportar</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Exportação de ordens de produção'</comment>
+  </data>
+  <data name="CONSULTA_CAMPOS_IMPORTAR" xml:space="preserve">
+    <value>SELECT	id,
+		NomeCampo AS 'Nome do campo',
+		NomeImportar AS 'Nome do elemento para importação',
+		Ativo AS 'Ativo_Db',
+		AceitarValoresVazios,
+		ValorPadrao
+FROM ConfigOrdensImportar</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Importação de ordens de produção'</comment>
+  </data>
+  <data name="CONSULTA_CIDADES_FOR_SELECAO" xml:space="preserve">
+    <value>select	id,
+		'Selecione' as Selecionar,
+		Cidade,
+		Estado,
+		UF,
+		Pais as 'País'
+from Cidades
+where id &gt; 0</value>
+    <comment>Utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_CLIENTES" xml:space="preserve">
+    <value>select	id,
+		NomeEmpresa,
+		Setor,
+		Endereco,
+		Cep,
+		Cidade,
+		Estado,
+		Pais,
+		CNPJ,
+		NomeInterno,
+		Telefone,
+		Email,
+		IsCliente,
+		IsFornecedor,
+		IsDistribuidor,
+		DtCriacao,
+		DtUltimaMod,
+		UsuarioUltimaMod
+from Clientes</value>
+    <comment>Utilizado na classe 'SkaAux'</comment>
+  </data>
+  <data name="CONSULTA_CLIENTES_FOR_SELECAO" xml:space="preserve">
+    <value>select	id,
+		'Selecione' as Selecionar,
+		NomeEmpresa as 'Nome do cliente',
+		Cidade,
+		Estado,
+		Pais as 'País'
+from Clientes
+where IsCliente = 1</value>
+    <comment>Utilizado no formulário 'FrmSelecionar'</comment>
+  </data>
+  <data name="CONSULTA_COLUNAS_TABELA_ORDENS" xml:space="preserve">
+    <value>select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS
+where DATA_TYPE != 'varbinary' and
+	  TABLE_NAME = 'Ordens' and COLUMN_NAME != 'id'</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Importação de ordens de produção'</comment>
+  </data>
+  <data name="CONSULTA_CONTATOS_FOR_SELECAO" xml:space="preserve">
+    <value>select	id,
+		'Selecione' as Selecionar,
+		CONCAT(Nome, ' ', SobreNome) as Nome,
+		Cliente,
+		Cidade,
+		Estado,
+		Pais as 'País'
+from ContatosClientes
+where Ativo = 1</value>
+    <comment>Utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_COTACOES_ATIVAS" xml:space="preserve">
+    <value>select MoedaPesquisa from Cotacao where Ativo = 1</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos'</comment>
+  </data>
+  <data name="CONSULTA_COTACOES_DIARIAS_FOR_SELECAO" xml:space="preserve">
+    <value>select	'Selecione'as 'Selecionar',
+		id,
+		MoedaPesquisada as 'Moeda',
+		ValorAtual as 'Valor da cotação',
+		DtConsulta as 'Data de cotação'
+from CotacaoDoDia
+where id &gt; 0</value>
+    <comment>Utilizado no formulário 'FrmCotacoesDIarias_Seleciona'</comment>
+  </data>
+  <data name="CONSULTA_CTS_MATERIAIS_DAS_ORDENS" xml:space="preserve">
+    <value>select distinct CentroTrabalho, Material from Ordens where Estado = 1</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="CONSULTA_CUSTOS_ADICIONAIS_FOR_SELECAO" xml:space="preserve">
+    <value>select	id,
+		'Selecionar' as 'Selecionar', 
+		CustoAdicional as 'Custo adicional',
+		CustoUnitario as 'Custo unitário (R$)',
+		QuantidadePadrao as 'Quantidade',
+		Ativo as 'Ativo_Db',
+		UsuarioResp,
+		DtCadastro
+from CustosAdicionais
+where CustoAdicional != ''</value>
+    <comment>utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_CUSTOS_ADICIONAIS_POR_ID" xml:space="preserve">
+    <value>select	id, 
+		CustoAdicional as 'Custo adicional',
+		CustoUnitario as 'Custo unitário (R$)',
+		QuantidadePadrao as 'Quantidade',
+		Ativo as 'Ativo_Db',
+		UsuarioResp,
+		DtCadastro
+from CustosAdicionais
+where CustoAdicional != ''</value>
+    <comment>utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_CUSTOS_DETALHADOS_ORCAMENTO" xml:space="preserve">
+    <value>SELECT  Descricao AS 'Descrição do item',
+		Tipo,
+		Valor
+FROM OrcamentosDetaCustos
+WHERE IdOrcamento = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_DetalheOrc'</comment>
+  </data>
+  <data name="CONSULTA_CUSTOS_MATERIAIS_FOR_SELECAO" xml:space="preserve">
+    <value>SELECT	'Selecione' as 'Selecionar',
+		id,
+		Ativo as 'Ativo_Db',
+		Material,
+		DensidadeMaterial as 'Densidade',
+		ValorPrecoQuilo,
+		Fornecedor,
+		OfertaValidaAte as 'Válido até'
+FROM CustosMateriais</value>
+    <comment>Utilizado no formulário 'FrmCustoMaterial_Seleciona'</comment>
+  </data>
+  <data name="CONSULTA_DADOS_AUXILIARES_POR_ID" xml:space="preserve">
+    <value>SELECT	id,
+		DadoAuxiliar AS 'Dado auxiliar',
+		Ativo as 'Ativo_Db',
+		UsuarioResp,
+		DtCadastro
+FROM DadosAuxiliares
+WHERE DadoAuxiliar != ''</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="CONSULTA_DADOS_AUXILIARES_POR_ID_ORDEM" xml:space="preserve">
+    <value>SELECT	DadosAuxiliares.id,
+		DadoAuxiliar AS 'Dado auxiliar',
+		Ativo as 'Ativo_Db',
+		UsuarioResp,
+		DtCadastro
+FROM DadosAuxiliares
+	INNER JOIN DadosAuxiliaresOrdens
+		on DadosAuxiliares.id = DadosAuxiliaresOrdens.IdDadoAuxiliar
+WHERE DadosAuxiliaresOrdens.IdOrdem = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="CONSULTA_ESTADOS_FOR_SELECAO" xml:space="preserve">
+    <value>select	id,
+		'Selecione' as Selecionar,
+		Estado,
+		UF,
+		Pais as 'País'
+from Estados
+where id &gt; 0</value>
+    <comment>Utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_EVENTOS_CALENDARIO" xml:space="preserve">
+    <value>select * from Calendario where VisivelATodos = 1 or Proprietario = @USR</value>
+    <comment>Utilizado no formulário 'FrmCalendario'</comment>
+  </data>
+  <data name="CONSULTA_EXTENSOES_BLOQUEADAS" xml:space="preserve">
+    <value>select * from ConfigLockedExtension</value>
+    <comment>Utilizado no formulário 'FrmConfig'</comment>
+  </data>
+  <data name="CONSULTA_EXTENSOES_PERMITIDAS" xml:space="preserve">
+    <value>select * from ConfigUnlockedExtension</value>
+    <comment>Utilizado no formulário 'FrmConfig'</comment>
+  </data>
+  <data name="CONSULTA_FIELDS_EXPORTAR" xml:space="preserve">
+    <value>select * from ConfigExportOrders</value>
+    <comment>Utilizado no formulário 'FrmConfig'</comment>
+  </data>
+  <data name="CONSULTA_FORNECEDORES" xml:space="preserve">
+    <value>select distinct Fornecedor from Fornecedores</value>
+    <comment>Utilizado no formulário 'FrmInventarios_New_Tool'</comment>
+  </data>
+  <data name="CONSULTA_HISTORICO_INVENTARIO_TOOL" xml:space="preserve">
+    <value>select	id,
+		IdTool,
+		InfoModificacoes as 'Detalhe',
+		UsuarioResp as 'Usuário responsável',
+		DtModificacao as 'Data de registro'
+from HistoricoModInventarioFerramentas
+where IdTool = @IDTOOL</value>
+    <comment>Utilizado no formulário 'FrmInventario_EstTool'</comment>
+  </data>
+  <data name="CONSULTA_HISTORICO_ORCAMENTOS" xml:space="preserve">
+    <value>select	id,
+		IdOrcamento,
+		InfoModificacoes as 'Detalhe',
+		UsuarioResp as 'Usuário responsável',
+		DtModificacao as 'Data de registro',
+		Versao as 'Versão'
+from HistoricoModOrcamentos
+where IdOrcamento = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_NewSim'</comment>
+  </data>
+  <data name="CONSULTA_HISTORICO_ORDENS" xml:space="preserve">
+    <value>select	id,
+		IdOrdem,
+		InfoModificacoes as 'Detalhe',
+		UsuarioResp as 'Usuário responsável',
+		DtModificacao as 'Data de registro'
+from HistoricoModOrdens
+where IdOrdem = @IDORDEM</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="CONSULTA_HISTORICO_TRABALHOS" xml:space="preserve">
+    <value>select	id,
+		IdJob,
+		InfoModificacoes as 'Detalhe',
+		UsuarioResp as 'Usuário responsável',
+		DtModificacao as 'Data de registro'
+from HistoricoModTrabalhos
+where IdJob = @IDJOB</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos_New'</comment>
+  </data>
+  <data name="CONSULTA_ICMS_ESTADUAIS" xml:space="preserve">
+    <value>SELECT * FROM IcmsEstaduais WHERE EstadoOrig = @EO AND EstadoDest = @ED</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_DetalheOrc'</comment>
+  </data>
+  <data name="CONSULTA_ID_MAQUINA" xml:space="preserve">
+    <value>select id_Mqn from Maquinas where NomeMaquina = @MqnName</value>
+    <comment>Utilizado no formulário 'FrmMqns_New'</comment>
+  </data>
+  <data name="CONSULTA_IMPOSTOS_FOR_SELECAO" xml:space="preserve">
+    <value>select	'Selecione' as 'Selecionar',
+		id,
+		Imposto,
+		TipoImposto,
+		'' as 'Tipo de imposto',
+		ValorImposto,
+		'' as 'Valor do imposto',
+		TemValidade,
+		ImpostoValidaAte as 'Válido até'
+from Impostos
+where Imposto != ''</value>
+    <comment>Utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_IMPOSTOS_POR_ID" xml:space="preserve">
+    <value>select	id,
+		Imposto,
+		TipoImposto,
+		'' as 'Tipo de imposto',
+		ValorImposto,
+		'' as 'Valor do imposto',
+		TemValidade,
+		ImpostoValidaAte as 'Válido até'
+from Impostos
+where Imposto != ''</value>
+    <comment>Utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_INVENTARIO_FERRAMENTAS" xml:space="preserve">
+    <value>SELECT [id],
+       [IdTool] as 'Id da ferramenta',
+       [DescricaoTool] as 'Nome da ferramenta',
+       [TipoTool] as 'Tipo_Db',
+       [SubTipoTool] as 'SubTipo_Db',
+       [UnidadeMedida] as 'Unidade_Db',
+       [TipoGestaoVidaUtil] as 'TipoGestao_Db',
+       [TempoVidaUtil] as 'Tempo de vida útil',
+       [TemValidade] as 'Possui validade',
+       [DataValidade] as 'Data de validade',
+       [Fornecedor],
+       [CustoUnitario] as 'Custo unitário',
+       [TempoReceber] as 'Tempo para recebimento',
+       [QuantidadeEstoque] as 'Quantidade em estoque',
+       [EstoqueMinimo] as 'Estoque mínimo',
+       [ParaVenda] as 'Permitir venda',
+       [ParaFabricacao] as 'Permitir fabricação',
+       [ParaUsoInterno] as 'Permitir uso interno',
+       [EstadoEstoque] as 'Estado_Db',
+       [Unidade] as 'Unidade organizacional',
+       [Armazem] as 'Armazém',
+       [DadosAdicionais] as 'Dados adicionais',
+       [DtCriacao],
+       [UsuarioCriacao],
+       [DtUltimaMod],
+       [UsuarioUltimaMod]
+FROM InventarioFerramentas
+where DescricaoTool is not null</value>
+    <comment>Utilizado no formulário 'FrmInventario'</comment>
+  </data>
+  <data name="CONSULTA_ITENS_ORCAMENTOS" xml:space="preserve">
+    <value>SELECT	NomeTipoItemOrc as 'Item',
+		CustoUnitario as 'Custo unitário (R$)',
+		CustoTotal as 'Custo total (R$)',
+		Quantidade,
+		CaminhoWin as 'CaminhoDoItem',
+		TempoProcesso as 'Tempo do processo',
+		TempoTotal as 'Tempo total',
+		IdTipoItemOrc as 'IdTipoItensOrcamento'
+FROM OrcamentosItens
+WHERE IdOrcamento = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_NewSim'</comment>
+  </data>
+  <data name="CONSULTA_LISTA_USUARIOS" xml:space="preserve">
+    <value>select Login from Usuarios order by Login</value>
+    <comment>Utilizado no formulário 'FrmTarefas_new'</comment>
+  </data>
+  <data name="CONSULTA_MAGAZINE_MQN" xml:space="preserve">
+    <value>select * from PresetsFerramentas where id_Mqn = @IDMQN order by ToolPosition</value>
+    <comment>Utilizado no formulário 'FrmMqns_ViewMagazine'</comment>
+  </data>
+  <data name="CONSULTA_MAQUINAS" xml:space="preserve">
+    <value>select	id,
+		NomeMaquina as 'Centro de trabalho',
+		MqnAtiva as 'MqnAtiva_Db',
+		CaminhoPosCompilado,
+		CaminhoPosCgd,
+		CaminhoCnc,
+		Ambiente as 'Ambiente_Db',
+		VersaoEcPos,
+		Tecnologia,
+		CustoHoraMqn,
+		CustoHoraHomem,
+		Descricao,
+		UnidadeFabril as 'Unidade',
+		DadosAux1,
+		DadosAux2,
+		DadosAux3
+from Maquinas 
+where NomeMaquina is not null</value>
+    <comment>Utilizadao no formulário 'FrmConsultaMqns'</comment>
+  </data>
+  <data name="CONSULTA_MARKUPS_FOR_SELECAO" xml:space="preserve">
+    <value>SELECT 'Selecione' as 'Selecionar',
+	   id,
+	   Nome,
+	   MargemLucro as 'Margem de lucro (%)',
+	   Markup,
+	   MarkDown,
+	   MultiplicadorValor,
+	   MultiplicadorPercentual,
+	   Ativo as 'Ativo_db',
+	   Visivel as 'Visível',
+	   DtCriacao as 'Data de cadastro',
+	   UsuarioCriacao as 'Cadastrado por'
+FROM Markup
+WHERE Nome IS NOT NULL</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_MarkupSeleciona'</comment>
+  </data>
+  <data name="CONSULTA_MATERIAIS_FOR_SELECAO" xml:space="preserve">
+    <value>select	'Selecione' as 'Selecionar',
+		id,
+		NomeMaterial as 'Material',
+		Densidade,
+		Ativo as 'Ativo_Db'
+from Materiais
+where NomeMaterial is not null</value>
+    <comment>Utilizado no formulário 'FrmMaterial_Seleciona'</comment>
+  </data>
+  <data name="CONSULTA_MODELOS_IGNORADOS" xml:space="preserve">
+    <value>select * from ConfigIgnoredModels</value>
+    <comment>Utilizado no formulário 'FrmConfig'</comment>
+  </data>
+  <data name="CONSULTA_MOEDAS_COTACOES_FOR_SELECAO" xml:space="preserve">
+    <value>select	'Selecione' as 'Selecionar',
+		id,
+		MoedaPesquisa as 'Moeda',
+		Ativo as 'Ativo_Db'
+from Cotacao
+where MoedaPesquisa is not null</value>
+    <comment>Utilizado no formulário 'FrmMoedas_Seleciona'</comment>
+  </data>
+  <data name="CONSULTA_MOVIMENTOS_INVENTARIO_TOOL" xml:space="preserve">
+    <value>select	id,
+		IdTool,
+		Acao,
+		Motivo,
+		Quantidade,
+		Fornecedor,
+		Unidade,
+		Armazem as 'Armazém',
+		Lote,
+		Descricao as 'Descrição',
+		DtCriacao as 'Data de registro',
+		UsuarioCriacao as 'Usuário responsável'
+from MovimentoInventariosFerramentas</value>
+    <comment>Utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_NOMES_COLUNAS_PERSONALIZAR" xml:space="preserve">
+    <value>SELECT	COLUMN_NAME AS 'Coluna',
+		'Tipo' = 
+		(
+			CASE WHEN DATA_TYPE = 'int' THEN 'Inteiro'
+				 WHEN DATA_TYPE = 'nvarchar' THEN 'Texto'
+				 WHEN DATA_TYPE = 'nchar' THEN 'Caractere'
+				 WHEN DATA_TYPE = 'date' THEN 'Data'
+				 WHEN DATA_TYPE = 'datetime' THEN 'Data e hora'
+				 WHEN DATA_TYPE = 'float' THEN 'Real'				 
+				 WHEN DATA_TYPE = 'varbinary' THEN 'Imagem'
+				 WHEN DATA_TYPE = 'bit' THEN 'Verdadeiro ou falso'
+				 ELSE 'Unknown'
+			END
+		),
+		'Criado por' = CASE WHEN COLUMN_NAME LIKE '%USR_%' THEN 'Usuário' ELSE  'Sistema' END
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = @NOME_TABELA</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Personalização'</comment>
+  </data>
+  <data name="CONSULTA_NOMES_TABELAS" xml:space="preserve">
+    <value>select sys.tables.name from sys.tables 
+where sys.tables.name != 'ConfigReferenciasAutomaticas'</value>
+    <comment>Utilizado no formulário 'FrmConfig'</comment>
+  </data>
+  <data name="CONSULTA_NOMES_TABELAS_PERSONALIZAR" xml:space="preserve">
+    <value>SELECT	'Selecionar' AS 'Selecionar',
+		TABLE_NAME AS 'Tabela' FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME NOT LIKE '%Config%'
+GROUP BY TABLE_NAME</value>
+    <comment>Utilizado no formulário 'FrmConfig_SelecionaTabela'</comment>
+  </data>
+  <data name="CONSULTA_ORCAMENTOS" xml:space="preserve">
+    <value>SELECT id,
+       Orcamento as 'Orçamento',
+       Cliente,
+       Contato,
+       Cidade,
+       UF as 'Unidade da federação',
+       Pais as 'País',
+       EstadoOrcamento as 'EstadoOrcamento_db',
+       TipoVisi as 'Visibilidade_db',
+       IdTipoOrcamento,
+	   TipoOrcamento as 'Tipo de orçamento',
+       IdTipoPag,
+	   NomePag as 'Forma de pagamento',
+       OrcOrigem as OrcOrigem_db,
+	   '' as 'Origem do orçamento',
+       IdMoeda,
+	   NomeMoeda as 'Moeda utilizada',
+       isnull(ValorMoeda, 0) as 'Valor da cotação',
+       PossuiDesconto as 'Tem desconto',
+       ValorDesconto as 'Valor de desconto',
+       FreteIncluso as 'Frete incluso',
+       ValorFrete as 'Valor frete',
+       TipoVenda,
+       ValorSomarVenda as 'Margem de lucro',
+       ValorTotal as 'Valor total',
+       ValorTotalComDesconto as 'Valor com desconto',
+       UsuarioCriacao as 'Solicitante/Vendedor',
+	   UsuarioUltMod as 'Responsável',
+	   DtCotacao as 'Data de cotação',
+       DtEmissao as 'Data de emissão',
+       DtValidade as 'Valido até',
+	   DtPrevEntrega as 'Data prevista para entrega',
+       Versao as 'Versão',
+       Ativo as Ativo_db,
+       DtCriacao as 'Data de cadastro',
+	   UsuarioCriacao as 'Cadastrado por',
+       DtUltimaMod as 'Data de última mod.',
+	   UsuarioUltMod as 'Ultima alteração por'
+FROM Orcamentos
+WHERE ID &gt; 0</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos'</comment>
+  </data>
+  <data name="CONSULTA_ORDENS" xml:space="preserve">
+    <value>select	id,
+		OrdemProducao as 'Ordem de produção',
+		PedidoVenda as 'Pedido',
+		Cliente,
+		Material,
+		UsuarioResp as 'Usuário responsável',
+		Ambiente as 'Ambiente_Db',
+		Estado as 'Estado_Db',
+		NomePeca as 'Peça',
+		CaminhoPeca,
+		EstadoOperacao as 'Estado da operação',
+		CentroTrabalho as 'Centro de trabalho',
+		Trabalho,
+		QuantidadeSolicitada as 'Solicitado',
+		QuantidadeRealizada as 'Realizado',
+		DataRequerida as 'Data de solicitação',
+		DataEntrega as 'Data de entrega',
+		Descricao as 'Descrição',
+		DadosAux1,
+		DadosAux2,
+		DadosAux3,
+		DadosAux4,
+		DadosAux5,
+		DadosAux6,
+		DadosAux7,
+		DadosAux8,
+		IsOpened,
+		UsuarioTrabalhando
+from Ordens</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="CONSULTA_PAISES_FOR_SELECAO" xml:space="preserve">
+    <value>select	id,
+		'Selecione' as Selecionar,
+		Pais as 'País',
+		Continente 
+from Paises
+where id &gt; 0</value>
+    <comment>Utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_PRODUTOS" xml:space="preserve">
+    <value>SELECT	P.id,
+		'Selecione' as Selecionar,
+		P.Nome,
+		P.Descricao as 'Descrição',
+		P.CustoUnitario as 'Custo unitário',
+		P.CustoTotal as 'Custo total',
+		P.DescontoPadrao as 'Desconto padrão',
+		P.Quantidade,
+		P.Tipo as 'Tipo_Db',
+		T.Nome AS 'Tipo',
+		P.Observacao as 'Observação',
+		P.Ativo as 'Ativo_Db',
+		P.DtCriacao as 'Data de cadastro',
+		P.UsuarioResp as 'Cadastrado por',
+		P.DtUltimaMod as 'Data de última mod.',
+		P.UsuarioUltMod as 'Última alteração por'
+FROM Produtos AS P
+	INNER JOIN TiposProdutos AS T
+		ON T.id = P.Tipo
+WHERE P.ID &gt; 0</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_Itens'</comment>
+  </data>
+  <data name="CONSULTA_REFERENCIAS_AUTOMATICAS" xml:space="preserve">
+    <value>select	Tabela,
+		Coluna,
+		Prefixo,
+		ValorFinal,
+		ValorInicial,
+		ContadorAtual
+from ConfigReferenciasAutomaticas</value>
+  </data>
+  <data name="CONSULTA_ROTAS_PRODUCAO" xml:space="preserve">
+    <value>
+		r.NomeRota,
+		o.Operacao,
+		o.OrdemExecucao,
+		o.TempoEstimado,
+		o.Custo
+from RotasProducao as r
+	inner join OperacoesRotasProducao as o
+		on o.IdRota = r.id
+where r.Ativo = 1</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_RotasSeleciona'</comment>
+  </data>
+  <data name="CONSULTA_TABELAS" xml:space="preserve">
+    <value>select TABLE_NAME, COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS
+where DATA_TYPE = 'nvarchar' and
+	  TABLE_NAME not like '%Config%' and TABLE_NAME not like '%sysdiagrams%'</value>
+    <comment>Utilizado no formulário 'FrmConfig_RefAuto'</comment>
+  </data>
+  <data name="CONSULTA_TAREFAS_NAO_LIDAS" xml:space="preserve">
+    <value>select isnull(count(*), 0) as 'Tasks'
+from Tarefas 
+where Lido = 0 and UsuarioDesignado = @USUARIO</value>
+    <comment>Utilizado no formulário 'FrmUserData'</comment>
+  </data>
+  <data name="CONSULTA_TAREFAS_USUARIO_LOGADO" xml:space="preserve">
+    <value>select	id,
+		Assunto,
+		Instrucoes as 'Descrição',
+		TipoTarefa,
+		PrioridadeTarefa,--Abaixo será adicionado a prioridade (com imagem)
+		DtInicio as 'Início',
+		DtLimite,
+		DtCriacao as 'Requerida',
+		DtUltimaMod,
+		UsuarioUltimaMod,
+		UsuarioDesignado 'Designado',
+		UsuarioSolicitante 'Solicitante',
+		ExecucaoRecursiva,
+		Periodo,
+		DtPeriodoInicio,
+		DtPeriodoNext,
+		Lido,
+		Completo
+from Tarefas</value>
+    <comment>Utilizado no formulário 'FrmTarefas'</comment>
+  </data>
+  <data name="CONSULTA_TARIFAS_FOR_SELECAO" xml:space="preserve">
+    <value>select	'Selecione' as 'Selecionar',
+		id,
+		Tarifa,
+		PorcentagemTarifa as 'Valor (%)',
+		PorcentagemLucro as 'Lucro sobre tarifa (%)',
+		TemValidade,
+		TarifaValidaAte as 'Válido até'
+from Tarifas
+where Tarifa != ''</value>
+    <comment>Utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_TARIFAS_POR_ID" xml:space="preserve">
+    <value>select	id,
+		Tarifa,
+		PorcentagemTarifa as 'Valor (%)',
+		PorcentagemLucro as 'Lucro sobre tarifa (%)',
+		TemValidade,
+		TarifaValidaAte as 'Válido até'
+from Tarifas
+where Tarifa != ''</value>
+    <comment>Utilizado na classe 'SkaQueries'</comment>
+  </data>
+  <data name="CONSULTA_TEMPO_GASTO_ORDEM" xml:space="preserve">
+    <value>select Tempo from TemposGastosProgramacao where IdOrdem = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="CONSULTA_TIPOS_ORCAMENTOS" xml:space="preserve">
+    <value>SELECT * FROM TiposOrcamentos</value>
+    <comment>Utilizado na classe 'Queries'</comment>
+  </data>
+  <data name="CONSULTA_TIPOS_PAGAMENTO" xml:space="preserve">
+    <value>select * from TiposPagamentos</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_New'</comment>
+  </data>
+  <data name="CONSULTA_TODAS_COTACOES_MES_CORRENTE" xml:space="preserve">
+    <value>select	id,
+		MoedaPesquisada,
+		ValorAtual as 'ValorTexto',
+		'' as ValorNum,
+		DtConsulta,
+		UsuarioResp
+from CotacaoDoDia 
+where ValorAtual like '%@MOEDA%' and
+cast(DtConsulta as date) between '@DTINICIO' and '@DTFIM'
+order by DtConsulta</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_Cotacoes'</comment>
+  </data>
+  <data name="CONSULTA_TODAS_REFERENCIAS_AUTOMATICAS" xml:space="preserve">
+    <value>SELECT		id,
+			Tabela,
+			Coluna,
+			Prefixo,
+			Incremento,
+			ValorInicial,
+			ValorFinal,
+			ContadorAtual AS 'Valor do contador atual',
+			InserirZeros,
+			ZerosAesquerda,
+			ZerosAdireita,
+			NumZerosInserir,
+			UltDataMod
+FROM ConfigReferenciasAutomaticas</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Referências automáticas'</comment>
+  </data>
+  <data name="CONSULTA_TODOS_DADOS_AUXILIARES" xml:space="preserve">
+    <value>SELECT	id,
+		DadoAuxiliar AS 'Dado auxiliar',
+		Ativo AS 'Ativo_Db',
+		'Selecionar' AS 'Selecionar'
+FROM DadosAuxiliares
+WHERE DadoAuxiliar != ''</value>
+    <comment>utilizado no formulário 'FrmDadosAuxiliares_Seleciona'</comment>
+  </data>
+  <data name="CONSULTA_ULTIMA_DATA_COTACAO_MOEDA" xml:space="preserve">
+    <value>select ValorAtual, DtConsulta from CotacaoDoDia 
+where DtConsulta = (select max(DtConsulta) from CotacaoDoDia where MoedaPesquisada = @MOEDA)
+and MoedaPesquisada = @MOEDA</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos'</comment>
+  </data>
+  <data name="CONSULTA_ULTIMO_ID_ARQUIVO" xml:space="preserve">
+    <value>select top 1 id from Arquivos order by id desc</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="CONSULTA_ULTIMO_ID_CUSTO_ADICIONAL" xml:space="preserve">
+    <value>select top 1 id from CustosAdicionais order by id desc</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos_CustosNew'</comment>
+  </data>
+  <data name="CONSULTA_ULTIMO_ID_DADO_AUXILIAR" xml:space="preserve">
+    <value>select top 1 id from DadosAuxiliares order by id desc</value>
+    <comment>Utilizado no formulário 'FrmDadosAuxiliares_New'</comment>
+  </data>
+  <data name="CONSULTA_UNIDADES_ORGANIZACIONAIS" xml:space="preserve">
+    <value>select distinct Unidade from UnidadesOrganizacionais where Ativo = 1</value>
+    <comment>Utilizado no formulário 'FrmInventarios_New_Tool'</comment>
+  </data>
+  <data name="CONSULTA_USUARIO" xml:space="preserve">
+    <value>select * from Usuarios where Login = @LOGIN and Senha = @SENHA</value>
+    <comment>Utilizado no formulário 'FrmLogin'</comment>
+  </data>
+  <data name="CONSULTA_USUARIOS_PARA_DESIGNAR_ORDENS" xml:space="preserve">
+    <value>select 'Selecione' as 'Selecionar',
+		Login as 'Usuário'
+from Usuarios
+where Login != 'SYSADM' and Ativo = 1</value>
+    <comment>Urilizado no formulário 'FrmSelecionaUsuario'</comment>
+  </data>
+  <data name="CONSULTA_VENDAS" xml:space="preserve">
+    <value>select * from Vendas</value>
+    <comment>Utilizado no form 'FrmRastreioVendas'</comment>
+  </data>
+  <data name="CONSULTA_VERSAO_DATABASE" xml:space="preserve">
+    <value>select * from Versao</value>
+    <comment>Utilizado no formulário 'FrmMain'</comment>
+  </data>
+  <data name="CONTULTA_TODAS_UNIDADES_ORGANIZACIONAIS" xml:space="preserve">
+    <value>select * from UnidadesOrganizacionais</value>
+    <comment>Utilizado na classe 'SkaAux'</comment>
+  </data>
+  <data name="DELETA_CAMPO_EXPORTACAO" xml:space="preserve">
+    <value>DELETE FROM ConfigOrdensExportar WHERE id = @ID</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Exportação de ordens de produção'</comment>
+  </data>
+  <data name="DELETA_CAMPO_IMPORTACAO" xml:space="preserve">
+    <value>DELETE FROM ConfigOrdensImportar WHERE id = @ID</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Importação de ordens de produção'</comment>
+  </data>
+  <data name="DELETA_COLUNA" xml:space="preserve">
+    <value>ALTER TABLE @TABELA DROP COLUMN @COLUNA;</value>
+  </data>
+  <data name="DELETA_CONSTRAINT_COLUNA" xml:space="preserve">
+    <value>DECLARE @ConstraintName nvarchar(200)
+SELECT @ConstraintName = Name FROM SYS.DEFAULT_CONSTRAINTS
+WHERE PARENT_OBJECT_ID = OBJECT_ID('@TABELA')
+AND PARENT_COLUMN_ID = (SELECT column_id FROM sys.columns
+                        WHERE NAME = N'@COLUNA'
+                        AND object_id = OBJECT_ID(N'@TABELA'))
+IF @ConstraintName IS NOT NULL
+EXEC('ALTER TABLE @TABELA DROP CONSTRAINT ' + @ConstraintName)</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Personalização'</comment>
+  </data>
+  <data name="DELETA_COTACAO_DIA" xml:space="preserve">
+    <value>delete from CotacaoDoDia where cast(DtConsulta as date) = '@DT' and MoedaPesquisada = '@MOEDA'</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos'</comment>
+  </data>
+  <data name="DELETA_REFERENCIA_AUTOMATICA" xml:space="preserve">
+    <value>delete from ConfigReferenciasAutomaticas where id = @ID</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Notificações'</comment>
+  </data>
+  <data name="DELETA_TAREFA" xml:space="preserve">
+    <value>delete from Tarefas where id_Tarefa = @IDTASK</value>
+    <comment>Utilizado no formulário 'FrmTarefas'</comment>
+  </data>
+  <data name="EXISTE_ARQUIVO_AUXILIAR_BANCO" xml:space="preserve">
+    <value>select * from Arquivos where CaminhoArquivo = @ARQ</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="EXISTE_COLUNA" xml:space="preserve">
+    <value>SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.columns
+WHERE TABLE_NAME = @TABELA AND COLUMN_NAME = @COLUNA</value>
+    <comment>Utilizado no formulário 'FrmConfig_AdicionaColuna'</comment>
+  </data>
+  <data name="EXISTE_CONFIGURACAO_NOTIFICACOES_USUARIO_ATUAL" xml:space="preserve">
+    <value>SELECT * FROM ConfigNotificacoes WHERE UsuarioResp = @USUARIO</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Notificações'</comment>
+  </data>
+  <data name="EXISTE_COTACAO_DE_HOJE" xml:space="preserve">
+    <value>select * from CotacaoDoDia where MoedaPesquisada = @MOEDA and cast(DtConsulta as date) = @DT</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos'</comment>
+  </data>
+  <data name="EXISTE_REFERENCIA_AUTOMATICA" xml:space="preserve">
+    <value>select * from ConfigReferenciasAutomaticas where Tabela=@TBL and Coluna=@CLM</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="INATIVA_CAMPO_EXPORTACAO" xml:space="preserve">
+    <value>UPDATE ConfigOrdensExportar SET Ativo = 0 where id = @ID</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Exportação de ordens de produção'</comment>
+  </data>
+  <data name="INATIVA_CAMPO_IMPORTACAO" xml:space="preserve">
+    <value>UPDATE ConfigOrdensImportar SET Ativo = 0 where id = @ID</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Importação de ordens de produção'</comment>
+  </data>
+  <data name="MARCA_TAREFA_COMO_LIDA" xml:space="preserve">
+    <value>update Tarefas set Lido = 1 where id = @ID</value>
+    <comment>Utilizado no fomrulário 'FrmTarefas'</comment>
+  </data>
+  <data name="REINICIA_ESTOQUE_TOOL" xml:space="preserve">
+    <value>update InventarioFerramentas set QuantidadeEstoque = 0, EstadoEstoque = 0 where id = @ID;</value>
+    <comment>Utilizado no formulário 'FrmInventarios_EstTool'</comment>
+  </data>
+  <data name="REMOVE_FOTO_USUARIO" xml:space="preserve">
+    <value>update Usuarios set Imagem =null where id = @ID</value>
+    <comment>Utilizado no formulário 'FrmUserData'</comment>
+  </data>
+  <data name="RENOMEIA_COLUNA" xml:space="preserve">
+    <value>exec sp_rename '@TABELA.@COLUNA', '@NOVA_COLUNA', 'COLUMN';</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Personalização'</comment>
+  </data>
+  <data name="SALVA_CONFIGURACOES_NOTIFICACOES" xml:space="preserve">
+    <value>INSERT INTO ConfigNotificacoes (MostrarNotificacoes, Tempo, TempoAnimacao, NotifyNovasOrdens, NotifyNovasOrdensErro, 
+								NotifyNovosOrçamentos, NotifyInventario, NotifyEstoqueMinimo, NotifyOrdensAtrasadas,
+								UsuarioResp, DtCriacao, DtUltimaMod)
+						VALUES (@MOSTRAR, @TEMPO, @TEMPO_ANIMACAO, @ORDENS, @ORDENS_ERRO,
+								@ORCAMENTOS, @INVENTARIO, @ESTOQUE, @ORDENS_ATRASADAS,
+								@USUARIO, @DATA_CRIACAO, @DATA_ULTMOD)</value>
+    <comment>Utilizado no formulário 'FrmConfig', aba 'Notificações'</comment>
+  </data>
+  <data name="SALVA_COTACAO_DE_HOJE" xml:space="preserve">
+    <value>insert into CotacaoDoDia (MoedaPesquisada, ValorAtual, DtConsulta, UsuarioResp)
+values (@MOEDA, @VALOR, @DT, @USR)</value>
+    <comment>Utilizado no formulário 'FrmOrcamentos'</comment>
+  </data>
+  <data name="TROCA_USUARIO_ORDEM" xml:space="preserve">
+    <value>update Ordens set UsuarioResp = @USR where id = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="VERIFICA_SE_EXISTE_FERRAMENTA_INVENTARIO" xml:space="preserve">
+    <value>select * from InventarioFerramentas where IdTool = @IDTOOL</value>
+    <comment>Utilizado no formulário 'FrmFerramentas'</comment>
+  </data>
+  <data name="VERIFICA_SE_ORDEM_ESTA_ABERTA" xml:space="preserve">
+    <value>SELECT IsOpened, UsuarioTrabalhando FROM Ordens WHERE id = @ID</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="VINCULA_ARQUIVO_AUXILIAR_ORDEM" xml:space="preserve">
+    <value>INSERT INTO ArquivosOrdens (IdArquivo, IdOrdem, DtUltimaMod, Usuario)
+VALUES (@DADOAUX, @ORDEM, GETDATE(), @USR)</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="VINCULA_DADO_AUXILIAR_ORDEM" xml:space="preserve">
+    <value>INSERT INTO DadosAuxiliaresOrdens (IdDadoAuxiliar, IdOrdem, DtUltimaMod, Usuario)
+VALUES (@DADOAUX, @ORDEM, GETDATE(), @USR)</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+</root>

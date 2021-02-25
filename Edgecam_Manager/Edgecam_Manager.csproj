@@ -1,0 +1,1703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A8FB085-13A5-44F8-951A-A0188CF33602}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Edgecam_Manager</RootNamespace>
+    <AssemblyName>Edgecam_Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>6766494d</NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Edgecam Manager.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.5.6403.13419, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Edgecam_Manager_AutoUpdate">
+      <HintPath>..\Edgecam_Manager_AutoUpdate\bin\Debug\Edgecam_Manager_AutoUpdate.dll</HintPath>
+    </Reference>
+    <Reference Include="Edgecam_Manager_Filters">
+      <HintPath>..\Edgecam_Manager_Filters\bin\Debug\Edgecam_Manager_Filters.dll</HintPath>
+    </Reference>
+    <Reference Include="Edgecam_Manager_License">
+      <HintPath>..\Edgecam_Manager_License\bin\Debug\Edgecam_Manager_License.dll</HintPath>
+    </Reference>
+    <Reference Include="Edgecam_Manager_LicenseConfig">
+      <HintPath>..\Edgecam_Manager_LicenseConfig\bin\Debug\Edgecam_Manager_LicenseConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="Edgecam_Manager_MacroDev">
+      <HintPath>..\Edgecam_Manager_MacroDev\bin\Debug\Edgecam_Manager_MacroDev.exe</HintPath>
+    </Reference>
+    <Reference Include="Edgecam_Manager_PackAndGo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Edgecam_Manager_PackAndGo\bin\Debug\Edgecam_Manager_PackAndGo.exe</HintPath>
+    </Reference>
+    <Reference Include="Edgecam_Manager_Random, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Edgecam_Manager_Random\bin\Debug\Edgecam_Manager_Random.dll</HintPath>
+    </Reference>
+    <Reference Include="eDrawingHostControl">
+      <HintPath>..\..\..\..\@Projetos Especiais\@Dlls\eDrawings 2019\eDrawingHostControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Eval3">
+      <HintPath>..\..\..\@Classes\@Referências externas (dlls) para classes\Eval3.dll</HintPath>
+    </Reference>
+    <Reference Include="ImagedComboBox">
+      <HintPath>..\ImagedComboBox\bin\Debug\ImagedComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Core.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Core.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.IO.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.IO.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Reports.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Reports.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.CSharp.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.TextDocument.CSharp.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.TSql.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.TextDocument.TSql.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.TextDocument.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.TextDocument.VisualBasic.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.TextDocument.VisualBasic.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Word.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Word.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Math.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Math.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.Core.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Olap.Core.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataProvider.Adomd.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Olap.DataProvider.Adomd.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataProvider.Flat.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Olap.DataProvider.Flat.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataProvider.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Olap.DataProvider.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataProvider.Xmla.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Olap.DataProvider.Xmla.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataSource.Flat.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Olap.DataSource.Flat.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataSource.Mdx.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Olap.DataSource.Mdx.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataSource.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Olap.DataSource.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Olap.DataSource.Xmla.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Olap.DataSource.Xmla.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Shared.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Undo.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Undo.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.AppStylistSupport.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.AppStylistSupport.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.Barcode.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.Barcode.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.Shared.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.Shared.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraDataChart.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.UltraDataChart.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraGauges.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.UltraGauges.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraGeographicMap.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.UltraGeographicMap.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraSparkline.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.UltraSparkline.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.Misc.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Portable.Core.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.Portable.Core.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.SupportDialogs.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.SupportDialogs.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraChart.v19.1.Design, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraChart.v19.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraGauge.v19.1.Design, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraGauge.v19.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinCalcManager.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v19.1.FormulaBuilder, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinCalcManager.v19.1.FormulaBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCarousel.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinCarousel.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinChart.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinChart.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinDataSource.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDock.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinDock.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinEditors.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinExplorerBar.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinFormattedText.WordWriter.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinFormattedText.WordWriter.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGanttView.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGanttView.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGauge.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGauge.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.DocumentExport.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.DocumentExport.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.ExcelExport.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.WordWriter.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.WordWriter.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinInkProvider.Ink17.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinInkProvider.Ink17.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListBar.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinListBar.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListView.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinListView.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinLiveTileView.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinLiveTileView.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinMaskedEdit.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinOfficeNavBar.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinOfficeNavBar.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinPivotGrid.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinPivotGrid.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinPrintPreviewDialog.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinPrintPreviewDialog.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinRadialMenu.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinRadialMenu.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSchedule.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinSchedule.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpellChecker.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinSpellChecker.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpreadsheet.ChartAdapter.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinSpreadsheet.ChartAdapter.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinSpreadsheet.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinSpreadsheet.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinStatusBar.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinTabbedMdi.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinTabControl.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinToolbars.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTree.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinTree.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v19.1, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.v19.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v19.1.Design, Version=19.1.20191.82, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Infragistics\2019.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.v19.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="interop.EmodelView, Version=27.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\@Projetos Especiais\@Dlls\eDrawings 2019\SP3\interop.EmodelView.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\@Classes\@Referências externas (dlls) para classes\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\@Projetos Especiais\@Dlls\Office 2016\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\@Projetos Especiais\@Dlls\Office 2016\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\CustomFilterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\CustomFilterControl.Designer.cs">
+      <DependentUpon>CustomFilterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\MathicalTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Dns.cs" />
+    <Compile Include="Classes\Math.cs" />
+    <Compile Include="Classes\CircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\eDrawingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Excel.cs" />
+    <Compile Include="Classes\NotificationBadge.cs" />
+    <Compile Include="Classes\Pdm.cs" />
+    <Compile Include="Classes\PreviewHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Queries.cs" />
+    <Compile Include="Classes\Auxiliar.cs" />
+    <Compile Include="Classes\Config.cs" />
+    <Compile Include="Classes\Objects.cs" />
+    <Compile Include="Classes\CustomStrings.cs" />
+    <Compile Include="Classes\%40CLASSE_PADRAO.cs" />
+    <Compile Include="Classes\CustomTimes.cs" />
+    <Compile Include="Classes\UltraGridOptions.cs" />
+    <Compile Include="Classes\WindowsServiceMgr.cs" />
+    <Compile Include="Classes\CustomXml.cs" />
+    <Compile Include="Classes\CustomReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\CustomReportControl.Designer.cs">
+      <DependentUpon>CustomReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmCancelar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmCancelar.Designer.cs">
+      <DependentUpon>FrmCancelar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_MarkupSeleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_MarkupSeleciona.Designer.cs">
+      <DependentUpon>FrmOrcamentos_MarkupSeleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_NewQuoteType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_NewQuoteType.Designer.cs">
+      <DependentUpon>FrmOrcamentos_NewQuoteType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrcamentos_NewTec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrcamentos_NewTec.Designer.cs">
+      <DependentUpon>FrmOrcamentos_NewTec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmFiltros_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmFiltros_New.Designer.cs">
+      <DependentUpon>FrmFiltros_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmLogin_Req.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmLogin_Req.Designer.cs">
+      <DependentUpon>FrmLogin_Req.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrcamentos_NewSim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrcamentos_NewSim.Designer.cs">
+      <DependentUpon>FrmOrcamentos_NewSim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrabalhos_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrabalhos_New.Designer.cs">
+      <DependentUpon>FrmTrabalhos_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmInventarios_MovTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmInventarios_MovTool.Designer.cs">
+      <DependentUpon>FrmInventarios_MovTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmImpostos_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmImpostos_Seleciona.Designer.cs">
+      <DependentUpon>FrmImpostos_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmImpostos_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmImpostos_New.Designer.cs">
+      <DependentUpon>FrmImpostos_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmTarifas_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmTarifas_Seleciona.Designer.cs">
+      <DependentUpon>FrmTarifas_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmTarifas_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmTarifas_New.Designer.cs">
+      <DependentUpon>FrmTarifas_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imagens_Edgecam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Imagens_Edgecam.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmCalendario.Designer.cs">
+      <DependentUpon>FrmCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmCustoMaterial_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmCustoMaterial_Seleciona.Designer.cs">
+      <DependentUpon>FrmCustoMaterial_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmMaterial_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmMaterial_Seleciona.Designer.cs">
+      <DependentUpon>FrmMaterial_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmCotacoesDiarias_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmCotacoesDiarias_Seleciona.Designer.cs">
+      <DependentUpon>FrmCotacoesDiarias_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imagens_NewLookInterface.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Imagens_NewLookInterface.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmSyneco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmSyneco.Designer.cs">
+      <DependentUpon>FrmSyneco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmMain2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmMain2.Designer.cs">
+      <DependentUpon>FrmMain2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmMoedas_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmMoedas_Seleciona.Designer.cs">
+      <DependentUpon>FrmMoedas_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmPais_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmPais_Seleciona.Designer.cs">
+      <DependentUpon>FrmPais_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmEstado_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmEstado_Seleciona.Designer.cs">
+      <DependentUpon>FrmEstado_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmCidades_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmCidades_Seleciona.Designer.cs">
+      <DependentUpon>FrmCidades_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmContatos_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmContatos_Seleciona.Designer.cs">
+      <DependentUpon>FrmContatos_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmClientes_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmClientes_Seleciona.Designer.cs">
+      <DependentUpon>FrmClientes_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_Criptomoedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_Criptomoedas.Designer.cs">
+      <DependentUpon>FrmOrcamentos_Criptomoedas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmInventarios_EstTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmInventarios_EstTool.Designer.cs">
+      <DependentUpon>FrmInventarios_EstTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_RotasSeleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_RotasSeleciona.Designer.cs">
+      <DependentUpon>FrmOrcamentos_RotasSeleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmInventarios_New_Tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmInventarios_New_Tool.Designer.cs">
+      <DependentUpon>FrmInventarios_New_Tool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_HistoricoCotacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_HistoricoCotacoes.Designer.cs">
+      <DependentUpon>FrmOrcamentos_HistoricoCotacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_DetalheOrc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_DetalheOrc.Designer.cs">
+      <DependentUpon>FrmOrcamentos_DetalheOrc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrcamentos_NewDet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrcamentos_NewDet.Designer.cs">
+      <DependentUpon>FrmOrcamentos_NewDet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_CustosSeleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_CustosSeleciona.Designer.cs">
+      <DependentUpon>FrmOrcamentos_CustosSeleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_CustosNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_CustosNew.Designer.cs">
+      <DependentUpon>FrmOrcamentos_CustosNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos.Designer.cs">
+      <DependentUpon>FrmOrcamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmLoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmLoadingScreen.Designer.cs">
+      <DependentUpon>FrmLoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmArquivos_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmArquivos_Seleciona.Designer.cs">
+      <DependentUpon>FrmArquivos_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmPreviewHandler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmPreviewHandler.Designer.cs">
+      <DependentUpon>FrmPreviewHandler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmDadosAuxiliares_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmDadosAuxiliares_Seleciona.Designer.cs">
+      <DependentUpon>FrmDadosAuxiliares_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmDadosAuxiliares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmDadosAuxiliares.Designer.cs">
+      <DependentUpon>FrmDadosAuxiliares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmDadosAuxiliares_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmDadosAuxiliares_New.Designer.cs">
+      <DependentUpon>FrmDadosAuxiliares_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmSelecionaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmSelecionaUsuario.Designer.cs">
+      <DependentUpon>FrmSelecionaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_ViewLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_ViewLog.Designer.cs">
+      <DependentUpon>FrmConfig_ViewLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmSelColunasGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmSelColunasGrid.Designer.cs">
+      <DependentUpon>FrmSelColunasGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmWaiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmWaiting.Designer.cs">
+      <DependentUpon>FrmWaiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_CamposExportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_CamposExportar.Designer.cs">
+      <DependentUpon>FrmConfig_CamposExportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_CamposImportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_CamposImportar.Designer.cs">
+      <DependentUpon>FrmConfig_CamposImportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_AdicionaColuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_AdicionaColuna.Designer.cs">
+      <DependentUpon>FrmConfig_AdicionaColuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_SelecionaTabela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_SelecionaTabela.Designer.cs">
+      <DependentUpon>FrmConfig_SelecionaTabela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPeca_Seleciona_Pdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPeca_Seleciona_Pdm.Designer.cs">
+      <DependentUpon>FrmPeca_Seleciona_Pdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmPeca_Importa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmPeca_Importa.Designer.cs">
+      <DependentUpon>FrmPeca_Importa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmInventarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmInventarios.Designer.cs">
+      <DependentUpon>FrmInventarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmProdutos_Seleciona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmProdutos_Seleciona.Designer.cs">
+      <DependentUpon>FrmProdutos_Seleciona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmSobre.Designer.cs">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_RefAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig_RefAuto.Designer.cs">
+      <DependentUpon>FrmConfig_RefAuto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomas\fr_FR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fr_FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomas\es_ES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>es_ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmPeca_Seleciona_Db.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmPeca_Seleciona_Db.Designer.cs">
+      <DependentUpon>FrmPeca_Seleciona_Db.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmErroInesperado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmErroInesperado.Designer.cs">
+      <DependentUpon>FrmErroInesperado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrdens_ViewModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrdens_ViewModel.Designer.cs">
+      <DependentUpon>FrmOrdens_ViewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Idiomas\en_US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>en_US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmTarefas_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmTarefas_New.Designer.cs">
+      <DependentUpon>FrmTarefas_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmLogin_UserCnns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmLogin_UserCnns.Designer.cs">
+      <DependentUpon>FrmLogin_UserCnns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_MarkupNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrcamentos_MarkupNew.Designer.cs">
+      <DependentUpon>FrmOrcamentos_MarkupNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmUserData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmUserData.Designer.cs">
+      <DependentUpon>FrmUserData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrdens_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrdens_New.Designer.cs">
+      <DependentUpon>FrmOrdens_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFabrica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFabrica.Designer.cs">
+      <DependentUpon>FrmFabrica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewAppointment.Designer.cs">
+      <DependentUpon>FrmNewAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmCamposNaoPreenchidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmCamposNaoPreenchidos.Designer.cs">
+      <DependentUpon>FrmCamposNaoPreenchidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrdens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmOrdens.Designer.cs">
+      <DependentUpon>FrmOrdens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmConfig.Designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmCncs_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmCncs_View.Designer.cs">
+      <DependentUpon>FrmCncs_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmMqns_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmMqns_New.Designer.cs">
+      <DependentUpon>FrmMqns_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmMaquinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmMaquinas.Designer.cs">
+      <DependentUpon>FrmMaquinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmFerramentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmFerramentas.Designer.cs">
+      <DependentUpon>FrmFerramentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmFerramentas_Rastreio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmFerramentas_Rastreio.Designer.cs">
+      <DependentUpon>FrmFerramentas_Rastreio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmTrabalhos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmTrabalhos.Designer.cs">
+      <DependentUpon>FrmTrabalhos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmTarefas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmTarefas.Designer.cs">
+      <DependentUpon>FrmTarefas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmLogin_NewPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmLogin_NewPass.Designer.cs">
+      <DependentUpon>FrmLogin_NewPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\Edgecam.cs" />
+    <Compile Include="Classes\CustomException.cs" />
+    <Compile Include="Classes\Sql.cs" />
+    <Compile Include="Classes\Utilities.cs" />
+    <Compile Include="Classes\CustomXmlConfig.cs" />
+    <Compile Include="Idiomas\pt_BR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pt_BR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas_Ec.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Consultas_Ec.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas_EcMgr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Consultas_EcMgr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas_Log.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Consultas_Log.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Messages.cs" />
+    <Compile Include="Classes\Exporter.cs" />
+    <Compile Include="Classes\Word.cs" />
+    <Compile Include="Classes\SolidWorks.cs" />
+    <Compile Include="Classes\SwDocMgr.cs" />
+    <EmbeddedResource Include="Classes\CustomFilterControl.resx">
+      <DependentUpon>CustomFilterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\CustomReportControl.resx">
+      <DependentUpon>CustomReportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmCancelar.resx">
+      <DependentUpon>FrmCancelar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrcamentos_MarkupSeleciona.resx">
+      <DependentUpon>FrmOrcamentos_MarkupSeleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrcamentos_NewQuoteType.resx">
+      <DependentUpon>FrmOrcamentos_NewQuoteType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrcamentos_NewTec.resx">
+      <DependentUpon>FrmOrcamentos_NewTec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmFiltros_New.resx">
+      <DependentUpon>FrmFiltros_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmLogin_Req.resx">
+      <DependentUpon>FrmLogin_Req.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrcamentos_NewSim.resx">
+      <DependentUpon>FrmOrcamentos_NewSim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrabalhos_New.resx">
+      <DependentUpon>FrmTrabalhos_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmInventarios_MovTool.resx">
+      <DependentUpon>FrmInventarios_MovTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmImpostos_Seleciona.resx">
+      <DependentUpon>FrmImpostos_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmImpostos_New.resx">
+      <DependentUpon>FrmImpostos_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmTarifas_Seleciona.resx">
+      <DependentUpon>FrmTarifas_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmTarifas_New.resx">
+      <DependentUpon>FrmTarifas_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmCalendario.resx">
+      <DependentUpon>FrmCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmCustoMaterial_Seleciona.resx">
+      <DependentUpon>FrmCustoMaterial_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmMaterial_Seleciona.resx">
+      <DependentUpon>FrmMaterial_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmCotacoesDiarias_Seleciona.resx">
+      <DependentUpon>FrmCotacoesDiarias_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens_NewLookInterface.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Imagens_NewLookInterface.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmSyneco.resx">
+      <DependentUpon>FrmSyneco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmMain2.resx">
+      <DependentUpon>FrmMain2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmMoedas_Seleciona.resx">
+      <DependentUpon>FrmMoedas_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmPais_Seleciona.resx">
+      <DependentUpon>FrmPais_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmEstado_Seleciona.resx">
+      <DependentUpon>FrmEstado_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmCidades_Seleciona.resx">
+      <DependentUpon>FrmCidades_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmContatos_Seleciona.resx">
+      <DependentUpon>FrmContatos_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmClientes_Seleciona.resx">
+      <DependentUpon>FrmClientes_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrcamentos_Criptomoedas.resx">
+      <DependentUpon>FrmOrcamentos_Criptomoedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmInventarios_EstTool.resx">
+      <DependentUpon>FrmInventarios_EstTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrcamentos_RotasSeleciona.resx">
+      <DependentUpon>FrmOrcamentos_RotasSeleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmInventarios_New_Tool.resx">
+      <DependentUpon>FrmInventarios_New_Tool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens_Edgecam.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Imagens_Edgecam.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrcamentos_HistoricoCotacoes.resx">
+      <DependentUpon>FrmOrcamentos_HistoricoCotacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrcamentos_CustosNew.resx">
+      <DependentUpon>FrmOrcamentos_CustosNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrcamentos_DetalheOrc.resx">
+      <DependentUpon>FrmOrcamentos_DetalheOrc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrcamentos_NewDet.resx">
+      <DependentUpon>FrmOrcamentos_NewDet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrcamentos_CustosSeleciona.resx">
+      <DependentUpon>FrmOrcamentos_CustosSeleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrcamentos.resx">
+      <DependentUpon>FrmOrcamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmLoadingScreen.resx">
+      <DependentUpon>FrmLoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmArquivos_Seleciona.resx">
+      <DependentUpon>FrmArquivos_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmPreviewHandler.resx">
+      <DependentUpon>FrmPreviewHandler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmDadosAuxiliares_Seleciona.resx">
+      <DependentUpon>FrmDadosAuxiliares_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmDadosAuxiliares.resx">
+      <DependentUpon>FrmDadosAuxiliares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmDadosAuxiliares_New.resx">
+      <DependentUpon>FrmDadosAuxiliares_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmSelecionaUsuario.resx">
+      <DependentUpon>FrmSelecionaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmSelColunasGrid.resx">
+      <DependentUpon>FrmSelColunasGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmConfig_ViewLog.resx">
+      <DependentUpon>FrmConfig_ViewLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmSobre.resx">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmWaiting.resx">
+      <DependentUpon>FrmWaiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmConfig_CamposExportar.resx">
+      <DependentUpon>FrmConfig_CamposExportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmConfig_CamposImportar.resx">
+      <DependentUpon>FrmConfig_CamposImportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmConfig_AdicionaColuna.resx">
+      <DependentUpon>FrmConfig_AdicionaColuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmConfig_SelecionaTabela.resx">
+      <DependentUpon>FrmConfig_SelecionaTabela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmInventarios.resx">
+      <DependentUpon>FrmInventarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmPeca_Importa.resx">
+      <DependentUpon>FrmPeca_Importa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmProdutos_Seleciona.resx">
+      <DependentUpon>FrmProdutos_Seleciona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmConfig_RefAuto.resx">
+      <DependentUpon>FrmConfig_RefAuto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPeca_Seleciona_Pdm.resx">
+      <DependentUpon>FrmPeca_Seleciona_Pdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\fr_FR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>fr_FR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\es_ES.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>es_ES.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmPeca_Seleciona_Db.resx">
+      <DependentUpon>FrmPeca_Seleciona_Db.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmErroInesperado.resx">
+      <DependentUpon>FrmErroInesperado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrdens_ViewModel.resx">
+      <DependentUpon>FrmOrdens_ViewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\en_US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>en_US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmTarefas_New.resx">
+      <DependentUpon>FrmTarefas_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmLogin_UserCnns.resx">
+      <DependentUpon>FrmLogin_UserCnns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrcamentos_MarkupNew.resx">
+      <DependentUpon>FrmOrcamentos_MarkupNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmUserData.resx">
+      <DependentUpon>FrmUserData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFabrica.resx">
+      <DependentUpon>FrmFabrica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewAppointment.resx">
+      <DependentUpon>FrmNewAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmCamposNaoPreenchidos.resx">
+      <DependentUpon>FrmCamposNaoPreenchidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrdens.resx">
+      <DependentUpon>FrmOrdens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmConfig.resx">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmCncs_View.resx">
+      <DependentUpon>FrmCncs_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmMaquinas.resx">
+      <DependentUpon>FrmMaquinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmMqns_New.resx">
+      <DependentUpon>FrmMqns_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmOrdens_New.resx">
+      <DependentUpon>FrmOrdens_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmFerramentas.resx">
+      <DependentUpon>FrmFerramentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmFerramentas_Rastreio.resx">
+      <DependentUpon>FrmFerramentas_Rastreio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmTrabalhos.resx">
+      <DependentUpon>FrmTrabalhos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmTarefas.resx">
+      <DependentUpon>FrmTarefas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmLogin_NewPass.resx">
+      <DependentUpon>FrmLogin_NewPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idiomas\pt_BR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>pt_BR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas_Ec.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Consultas_Ec.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas_EcMgr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Consultas_EcMgr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas_Log.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Consultas_Log.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Themes\Aero.isl" />
+    <None Include="Themes\Chameleon.isl" />
+    <None Include="Themes\Claymation.isl" />
+    <None Include="Themes\Excel2013 - Dark Gray.isl" />
+    <None Include="Themes\Excel2013 - Light Gray.isl" />
+    <None Include="Themes\Excel2013 - White.isl" />
+    <None Include="Themes\GrapeTomato.isl" />
+    <None Include="Themes\IG.isl" />
+    <None Include="Themes\LucidDream.isl" />
+    <None Include="Themes\Metro.isl" />
+    <None Include="Themes\ModClay.isl" />
+    <None Include="Themes\Nautilus.isl" />
+    <None Include="Themes\NoirModerne.isl" />
+    <None Include="Themes\Office2007Black.isl" />
+    <None Include="Themes\Office2007Blue.isl" />
+    <None Include="Themes\Office2007Silver.isl" />
+    <None Include="Themes\Office2010Black.isl" />
+    <None Include="Themes\Office2010Blue.isl" />
+    <None Include="Themes\Office2010Silver.isl" />
+    <None Include="Themes\Office2013 - Dark Gray.isl" />
+    <None Include="Themes\Office2013 - Light Gray.isl" />
+    <None Include="Themes\Office2013 - White.isl" />
+    <None Include="Themes\Outlook2013 - Dark Gray.isl" />
+    <None Include="Themes\Outlook2013 - LightGray.isl" />
+    <None Include="Themes\Outlook2013 - White.isl" />
+    <None Include="Themes\Pear.isl" />
+    <None Include="Themes\RedPlanet.isl" />
+    <None Include="Themes\RubberBlack.isl" />
+    <None Include="Themes\Trendy.isl" />
+    <None Include="Themes\VS2008.isl" />
+    <None Include="Themes\VS2010.isl" />
+    <None Include="Themes\VS2013 - Blue.isl" />
+    <None Include="Themes\VS2013 - Dark.isl" />
+    <None Include="Themes\VS2013 - Light.isl" />
+    <None Include="Themes\Windows7.isl" />
+    <None Include="Themes\Windows8-DarkGray-Blue.isl" />
+    <None Include="Themes\Windows8-DarkGray-Green.isl" />
+    <None Include="Themes\Windows8-DarkGray-Pink.isl" />
+    <None Include="Themes\Windows8-DarkGray-Yellow.isl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Edgecam Manager.ico" />
+    <None Include="Resources\arrow_direita.png" />
+    <None Include="Resources\arrow_esquerda.png" />
+    <None Include="Resources\arrow_expandir.png" />
+    <None Include="Resources\arrow_recolher.png" />
+    <None Include="Resources\Cancelled.png" />
+    <None Include="Resources\diameter.png" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\Export_Jobs.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\Global.png" />
+    <None Include="Resources\Green.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\Hole_0.png" />
+    <None Include="Resources\Hole_1.png" />
+    <None Include="Resources\Hole_2.png" />
+    <None Include="Resources\Hole_3.png" />
+    <None Include="Resources\Hole_4.png" />
+    <None Include="Resources\Hole_5.png" />
+    <None Include="Resources\Hole_6.png" />
+    <None Include="Resources\Hole_7.png" />
+    <None Include="Resources\Hole_8.png" />
+    <None Include="Resources\Mill_0.png" />
+    <None Include="Resources\Mill_1.png" />
+    <None Include="Resources\Mill_2.png" />
+    <None Include="Resources\Mill_3.png" />
+    <None Include="Resources\Mill_4.png" />
+    <None Include="Resources\Mill_5.png" />
+    <None Include="Resources\Mill_6.png" />
+    <None Include="Resources\Mill_7.png" />
+    <None Include="Resources\Mill_8.png" />
+    <None Include="Resources\Mill_9.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\Orange.png" />
+    <None Include="Resources\Orders.png" />
+    <None Include="Resources\PartiallyReleased.png" />
+    <None Include="Resources\Probe_0.png" />
+    <None Include="Resources\Red.png" />
+    <None Include="Resources\Turn_0.png" />
+    <None Include="Resources\Turn_1.png" />
+    <None Include="Resources\Turn_2.png" />
+    <None Include="Resources\Turn_3.png" />
+    <None Include="Resources\Turn_4.png" />
+    <None Include="Resources\Turn_5.png" />
+    <None Include="Resources\Turn_6.png" />
+    <None Include="Resources\Turn_7.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\White.png" />
+    <None Include="Resources\word.png" />
+    <None Include="Resources\communication.png" />
+    <None Include="Resources\br.png" />
+    <None Include="Resources\es.png" />
+    <None Include="Resources\us.png" />
+    <None Include="Resources\p_alta.png" />
+    <None Include="Resources\p_baixa.png" />
+    <None Include="Resources\p_normal.png" />
+    <None Include="Resources\complete.png" />
+    <None Include="Resources\Email.png" />
+    <None Include="Resources\Meeting.png" />
+    <None Include="Resources\Notification.png" />
+    <None Include="Resources\PhoneCall.png" />
+    <None Include="Resources\3D view.png" />
+    <None Include="Resources\view_part.png" />
+    <None Include="Resources\error_robot.jpg" />
+    <None Include="Resources\soma.png" />
+    <None Include="Resources\subtracao.png" />
+    <None Include="Resources\sw_part.png" />
+    <None Include="Resources\sw_assembly.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\uncheck.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\minor.png" />
+    <None Include="Resources\pdf.png" />
+    <None Include="Resources\export.png" />
+    <None Include="Resources\csv.png" />
+    <None Include="Resources\doc.png" />
+    <None Include="Resources\docx.png" />
+    <None Include="Resources\txt.png" />
+    <None Include="Resources\xls.png" />
+    <None Include="Resources\xlsx.png" />
+    <None Include="Resources\xml.png" />
+    <None Include="Resources\png.png" />
+    <None Include="Resources\jpg.png" />
+    <None Include="Resources\bmp.png" />
+    <None Include="Resources\orcamento.png" />
+    <None Include="Resources\PDMSW.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\Edgecam_manager_logo.png" />
+    <None Include="Resources\table.png" />
+    <None Include="Resources\system.png" />
+    <None Include="Resources\folder_open.png" />
+    <None Include="Resources\folder_open2.png" />
+    <None Include="Resources\Wait.gif" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\icons8-toggle-off-48.png" />
+    <None Include="Resources\icons8-toggle-on-48.png" />
+    <None Include="Resources\lock-48.png" />
+    <None Include="Resources\padlock-48.png" />
+    <None Include="Resources\black.png" />
+    <None Include="Resources\theme_white.png" />
+    <None Include="Resources\mainIcon_16x16.png" />
+    <None Include="Resources\4.0.png" />
+    <None Include="Resources\outsource.png" />
+    <None Include="Resources\quotation.png" />
+    <None Include="Resources\consultancy.png" />
+    <None Include="Resources\external.png" />
+    <None Include="Resources\internal.png" />
+    <None Include="Resources\side_center.png" />
+    <None Include="Resources\side_left.png" />
+    <None Include="Resources\side_right.png" />
+    <None Include="Resources\hole1.png" />
+    <None Include="Resources\Hole_01.png" />
+    <None Include="Resources\Hole_11.png" />
+    <None Include="Resources\Hole_21.png" />
+    <None Include="Resources\Hole_31.png" />
+    <None Include="Resources\Hole_41.png" />
+    <None Include="Resources\Hole_51.png" />
+    <None Include="Resources\Hole_61.png" />
+    <None Include="Resources\Hole_71.png" />
+    <None Include="Resources\Hole_81.png" />
+    <None Include="Resources\Mill_01.png" />
+    <None Include="Resources\Mill_11.png" />
+    <None Include="Resources\Mill_21.png" />
+    <None Include="Resources\Mill_31.png" />
+    <None Include="Resources\Mill_41.png" />
+    <None Include="Resources\Mill_51.png" />
+    <None Include="Resources\Mill_61.png" />
+    <None Include="Resources\Mill_71.png" />
+    <None Include="Resources\Mill_81.png" />
+    <None Include="Resources\Mill_91.png" />
+    <None Include="Resources\chamfer_cycle1.png" />
+    <None Include="Resources\constant_cusp_finishing_cycle1.png" />
+    <None Include="Resources\diameter1.png" />
+    <None Include="Resources\face_mill1.png" />
+    <None Include="Resources\feed_move1.png" />
+    <None Include="Resources\finish_groove1.png" />
+    <None Include="Resources\finish_side_groove_turn1.png" />
+    <None Include="Resources\finish_turn1.png" />
+    <None Include="Resources\flat_and_finishing_cycle1.png" />
+    <None Include="Resources\flow_surface_cycle1.png" />
+    <None Include="Resources\parallel_lace_cycle1.png" />
+    <None Include="Resources\plunge_roughing1.png" />
+    <None Include="Resources\Probe_01.png" />
+    <None Include="Resources\profiling_cycle1.png" />
+    <None Include="Resources\project_boundary_collapse_cycle1.png" />
+    <None Include="Resources\project_circular_cycle1.png" />
+    <None Include="Resources\project_flow_curves_cycle1.png" />
+    <None Include="Resources\project_toolpath_cycle1.png" />
+    <None Include="Resources\rapid_move1.png" />
+    <None Include="Resources\rest_finishing_cycle1.png" />
+    <None Include="Resources\rough_groove1.png" />
+    <None Include="Resources\rough_side_groove_turn1.png" />
+    <None Include="Resources\rough_turn1.png" />
+    <None Include="Resources\roughing_cycle1.png" />
+    <None Include="Resources\slot_cycle1.png" />
+    <None Include="Resources\straight_turn1.png" />
+    <None Include="Resources\thread_milling1.png" />
+    <None Include="Resources\thread_turn1.png" />
+    <None Include="Resources\toolchange1.png" />
+    <None Include="Resources\toolhome1.png" />
+    <None Include="Resources\Turn_01.png" />
+    <None Include="Resources\Turn_11.png" />
+    <None Include="Resources\Turn_21.png" />
+    <None Include="Resources\Turn_31.png" />
+    <None Include="Resources\Turn_41.png" />
+    <None Include="Resources\Turn_51.png" />
+    <None Include="Resources\Turn_61.png" />
+    <None Include="Resources\Turn_71.png" />
+    <None Include="Resources\update_fixture1.png" />
+    <None Include="Resources\update_stock1.png" />
+    <None Include="Resources\probe_none.png" />
+    <None Include="Resources\probe_primary.png" />
+    <None Include="Resources\probe_secondary.png" />
+    <None Include="Resources\Additive_0.png" />
+    <None Include="Resources\Additive_1.png" />
+    <None Include="Resources\Additive_2.png" />
+    <None Include="Resources\Additive_3.png" />
+    <None Include="Resources\ajuste de inventário.png" />
+    <None Include="Resources\entrada de inventário.png" />
+    <None Include="Resources\saída de inventário.png" />
+    <None Include="Resources\part.png" />
+    <None Include="Resources\tubo.png" />
+    <None Include="Resources\fixacao.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\search_property.png" />
+    <None Include="Resources\graficos.png" />
+    <None Include="Resources\asterisk.png" />
+    <None Include="Resources\Syneco_logo.png" />
+    <None Include="Resources\config_128.png" />
+    <None Include="Resources\export_blue1.png" />
+    <None Include="Resources\import_blue1.png" />
+    <None Include="Resources\barra sextavada.png" />
+    <None Include="Resources\barra.png" />
+    <None Include="Resources\bloco.png" />
+    <None Include="Resources\tubo_furo.png" />
+    <None Include="Resources\armazem.png" />
+    <None Include="Resources\boletos_emitidos.png" />
+    <None Include="Resources\boletos_emitir.png" />
+    <None Include="Resources\calculadora.png" />
+    <None Include="Resources\calendario_agendamento.png" />
+    <None Include="Resources\change_pass_100.png" />
+    <None Include="Resources\Clientes.png" />
+    <None Include="Resources\config.png" />
+    <None Include="Resources\contatos.png" />
+    <None Include="Resources\data_pagamento.png" />
+    <None Include="Resources\export_blue.png" />
+    <None Include="Resources\ferramentas.png" />
+    <None Include="Resources\fuso_horario_tempo.png" />
+    <None Include="Resources\imoveis.png" />
+    <None Include="Resources\import_blue.png" />
+    <None Include="Resources\inicio_azul.png" />
+    <None Include="Resources\lista_moedas.png" />
+    <None Include="Resources\mais_vendido_top_dez.png" />
+    <None Include="Resources\maquinas.png" />
+    <None Include="Resources\moedas_cotacao.png" />
+    <None Include="Resources\novo.png" />
+    <None Include="Resources\pagamentos.png" />
+    <None Include="Resources\producao_fabrica.png" />
+    <None Include="Resources\producao_implantacao.png" />
+    <None Include="Resources\produto_inventario.png" />
+    <None Include="Resources\relatorios.png" />
+    <None Include="Resources\sair_blue.png" />
+    <None Include="Resources\servico_suporte.png" />
+    <None Include="Resources\seta_abaixo.png" />
+    <None Include="Resources\seta_acima.png" />
+    <None Include="Resources\seta_direita.png" />
+    <None Include="Resources\seta_esquerda.png" />
+    <None Include="Resources\tarefa.png" />
+    <None Include="Resources\tarefa_concluida.png" />
+    <None Include="Resources\tarefas_lista.png" />
+    <None Include="Resources\trabalhos_pasta.png" />
+    <None Include="Resources\trocar_senha.png" />
+    <None Include="Resources\usuario_azul.png" />
+    <None Include="Resources\vencimento.png" />
+    <None Include="Resources\vendas_pedidos.png" />
+    <None Include="Resources\web.png" />
+    <None Include="Resources\xml_azul.png" />
+    <None Include="Resources\adicionar_mais.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\remover_deletar.png" />
+    <None Include="Resources\pesquisar.png" />
+    <None Include="Resources\sair_blue_16.png" />
+    <None Include="Resources\salvar_16.png" />
+    <None Include="Resources\selecionar_selecionado_16.png" />
+    <None Include="Resources\backup_banco_de_dados.png" />
+    <None Include="Resources\raio_automatico_16.png" />
+    <None Include="Resources\novo_16.png" />
+    <None Include="Resources\detalhes_16.png" />
+    <None Include="Resources\tarefa_16.png" />
+    <None Include="Resources\mao_selecionar_16.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\caixa_16.png" />
+    <None Include="Resources\servico_manutencao_16.png" />
+    <None Include="Resources\dinheiro_16.png" />
+    <None Include="Resources\relogio_despertador_16.png" />
+    <None Include="Resources\start_comecar_16.png" />
+    <None Include="Resources\compras_carrinho_16.png" />
+    <None Include="Resources\telefone_ligacao_16.png" />
+    <None Include="Resources\ex_error.png" />
+    <None Include="Resources\ex_information.png" />
+    <None Include="Resources\ex_notice.png" />
+    <None Include="Resources\ex_notification.png" />
+    <None Include="Resources\circulo_tubo.png" />
+    <None Include="Resources\cambio_moeda_cotacao.png" />
+    <None Include="Resources\instalacao_software.png" />
+    <None Include="Resources\compras_carrinho.png" />
+    <None Include="Resources\consultoria_perguntar.png" />
+    <None Include="Resources\materiais_camadas.png" />
+    <None Include="Resources\documento.png" />
+    <None Include="Resources\banco_de_dados.png" />
+    <None Include="Resources\pasta_aberta_abrir.png" />
+    <None Include="Resources\preview_visualizar_16.png" />
+    <None Include="Resources\importar_arquivo.png" />
+    <None Include="Resources\exportar_arquivo.png" />
+    <None Include="Resources\ferramentas2.png" />
+    <None Include="Resources\ordenar_crescente_16.png" />
+    <None Include="Resources\ordenar_decrescente_16.png" />
+    <None Include="Resources\agrupamento_16.png" />
+    <None Include="Resources\escolher_editar_coluna_16.png" />
+    <None Include="Resources\estoque_ entrada.png" />
+    <None Include="Resources\estoque_ saida.png" />
+    <None Include="Resources\caixa.png" />
+    <None Include="Resources\subtrair_menos_16.png" />
+    <Content Include="PreBuild event command line solution.txt" />
+    <None Include="Resources\industria_4.0.png" />
+    <None Include="Resources\filter_16.png" />
+    <None Include="Resources\filter_clear_16.png" />
+    <None Include="Resources\filtro_salvar_16.png" />
+    <None Include="Resources\development_prototype_16.png" />
+    <None Include="Resources\calc_16.png" />
+    <None Include="Resources\send_16.png" />
+    <None Include="Resources\report_google_16.png" />
+    <Content Include="Scripts Edgecam\AbrePeca.js" />
+    <None Include="Resources\excel1.png" />
+    <None Include="Resources\mill_position.png" />
+    <None Include="Resources\arrow_state_blue_expanded.png" />
+    <None Include="Resources\arrow_state_blue_right.png" />
+    <None Include="Resources\comment.png" />
+    <None Include="Resources\feed_move.png" />
+    <None Include="Resources\rapid_move.png" />
+    <None Include="Resources\toolchange.png" />
+    <None Include="Resources\toolhome.png" />
+    <None Include="Resources\update_stock.png" />
+    <None Include="Resources\chamfer_cycle.png" />
+    <None Include="Resources\constant_cusp_finishing_cycle.png" />
+    <None Include="Resources\face_mill.png" />
+    <None Include="Resources\flat_and_finishing_cycle.png" />
+    <None Include="Resources\flow_surface_cycle.png" />
+    <None Include="Resources\parallel_lace_cycle.png" />
+    <None Include="Resources\pencil_mill_cycle.png" />
+    <None Include="Resources\plunge_roughing.png" />
+    <None Include="Resources\profiling_cycle.png" />
+    <None Include="Resources\project_boundary_collapse_cycle.png" />
+    <None Include="Resources\project_circular_cycle.png" />
+    <None Include="Resources\project_flow_curves_cycle.png" />
+    <None Include="Resources\project_toolpath_cycle.png" />
+    <None Include="Resources\rest_finishing_cycle.png" />
+    <None Include="Resources\roughing_cycle.png" />
+    <None Include="Resources\slot_cycle.png" />
+    <None Include="Resources\thread_milling.png" />
+    <None Include="Resources\finish_groove.png" />
+    <None Include="Resources\finish_side_groove_turn.png" />
+    <None Include="Resources\finish_turn.png" />
+    <None Include="Resources\rough_groove.png" />
+    <None Include="Resources\rough_side_groove_turn.png" />
+    <None Include="Resources\rough_turn.png" />
+    <None Include="Resources\straight_turn.png" />
+    <None Include="Resources\thread_turn.png" />
+    <None Include="Resources\hole.png" />
+    <Content Include="ConfigCurrentUser.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy "$(ProjectDir)Config.xml" "$(TargetDir)Config.xml"
+copy "$(ProjectDir)ConfigCurrentUser.xml" "$(TargetDir)ConfigCurrentUser.xml"
+copy "$(ProjectDir)\Scripts Edgecam\AbrePeca.js" "$(TargetDir)AbrePeca.js"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

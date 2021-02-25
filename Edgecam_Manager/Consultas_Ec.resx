@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BUSCA_ARQUIVO_PPF_ORDEM" xml:space="preserve">
+    <value>select JOB_CAM_FILE, JOB_CAD_FILE from TS_JOB where JOB_JOB_DESCRIPTION = @JOB</value>
+    <comment>Utilizado no formulário 'FrmOrdens'</comment>
+  </data>
+  <data name="BUSCA_IMAGENS_POR_JOBID" xml:space="preserve">
+    <value>select	JBP_JOB_IMAGE_ID, 
+		JBP_IMAGE_DESC as 'Descrição da imagem', 
+		JBP_IMAGE_BLOB 
+from TS_JOB_IMAGES 
+where JBP_JOB_ID=@JOBID</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos_New'</comment>
+  </data>
+  <data name="BUSCA_QTDE_USED_TOOL" xml:space="preserve">
+    <value>SELECT	ISNULL(COUNT(SKA_TL3.TL_TOOL_DESCRIPTION), 0) AS TL_QTDE_USED
+FROM TS_JOB AS SKA_TL1
+	INNER JOIN TS_MOUNTING  AS SKA_TL2
+		ON SKA_TL1.JOB_JOB_DESCRIPTION = SKA_TL2.MNT_JOB_DESC 
+	INNER JOIN TS_TOOL AS SKA_TL3
+		ON SKA_TL2.MNT_TOOL_ID = SKA_TL3.TL_TOOL_ID
+	INNER JOIN TS_JOB_INSTRUCTION AS SKA_TL4
+		ON SKA_TL4.JBI_JOB_DESC=SKA_TL2.MNT_JOB_DESC
+		AND SKA_TL4.JBI_TURRET_POSITION = SKA_TL2.MNT_TURRET_POSITION
+WHERE SKA_TL3.TL_TOOL_ID = @TOOLID
+GROUP BY SKA_TL3.TL_TOOL_ID , SKA_TL3.TL_TOOL_DESCRIPTION, SKA_TL3.TL_TOOL_ID</value>
+    <comment>Utilizado para consultar a quantidade de ferramentas utilizadas.</comment>
+  </data>
+  <data name="CADASTRA_NOVO_TRABALHO" xml:space="preserve">
+    <value>INSERT INTO TS_JOB (JOB_JOB_DESCRIPTION, JOB_COMMENT, JOB_FAMILY, JOB_LOCATION, JOB_CUSTOMER, JOB_PROGRAMMER,
+					JOB_MATERIAL_DESC, JOB_JOB_STATUS_ID, JOB_CAD_FILE, JOB_PREDEFINED_TOOLING,
+					JOB_REVISION, JOB_NOTES_SUBJECT, JOB_NOTES_FILE, JOB_NOTES, JOB_FIXTURE_NOTES_SUBJECT,
+					JOB_FIXTURE_NOTES_FILE, JOB_FIXTURE_NOTES, JOB_STOCK_NOTES_SUBJECT, JOB_STOCK_NOTES_FILE, JOB_STOCK_NOTES, 
+					JOB_VISIBILITY, JOB_TURRET_WARNING, JOB_CREATED, JOB_MODIFIED)
+			VALUES (@DESC, @COMMENT, @FAMILY, @LOCATION, @CUSTOMER, @PROGRAMMER,
+					@MATERIAL, 0, @CAD, 0,
+					@REV, @JOB_NOTES_SUBJECT, @JOB_NOTES_FILE, @JOB_NOTES, @FIX_NOTES_SUBJECT,
+					@FIX_NOTES_FILE, @FIX_NOTES, @STOCK_NOTES_SUBJECT, @STOCK_NOTES_FILE, @STOCK_NOTES,
+					1, 0, @DT_CRT, @DT_MOD);</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'
+--Versão 1
+INSERT INTO TS_JOB (JOB_JOB_DESCRIPTION, JOB_COMMENT, JOB_FAMILY, JOB_LOCATION, JOB_CUSTOMER, JOB_PROGRAMMER,
+					JOB_MATERIAL_DESC, JOB_JOB_STATUS_ID, JOB_CAD_FILE, JOB_PREDEFINED_TOOLING,
+					JOB_REVISION, JOB_NOTES_SUBJECT, JOB_NOTES_FILE, JOB_NOTES, JOB_FIXTURE_NOTES_SUBJECT,
+					JOB_FIXTURE_NOTES_FILE, JOB_FIXTURE_NOTES, JOB_STOCK_NOTES_SUBJECT, JOB_STOCK_NOTES_FILE, JOB_STOCK_NOTES, 
+					JOB_VISIBILITY, JOB_TURRET_WARNING, JOB_CREATED, JOB_MODIFIED, JOB_PARENT_JOB_ID)
+			VALUES (@DESC, @COMMENT, @FAMILY, @LOCATION, @CUSTOMER, @PROGRAMMER,
+					@MATERIAL, 0, @CAD, 0,
+					@REV, @JOB_NOTES_SUBJECT, @JOB_NOTES_FILE, @JOB_NOTES, @FIX_NOTES_SUBJECT,
+					@FIX_NOTES_FILE, @FIX_NOTES, @STOCK_NOTES_SUBJECT, @STOCK_NOTES_FILE, @STOCK_NOTES,
+					1, 0, @DT_CRT, @DT_MOD, @PARENT_JOB);</comment>
+  </data>
+  <data name="CANCELA_TRABALHO" xml:space="preserve">
+    <value>update TS_JOB set JOB_JOB_STATUS_ID = 5 WHERE JOB_JOB_DESCRIPTION = @JOBNAME</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos'</comment>
+  </data>
+  <data name="CONSULTA_BRUTOS" xml:space="preserve">
+    <value>SELECT	T1.STOCK_STOCK_ID AS 'Id',
+		T1.STOCK_TYPE_ID AS 'Tipo_db',
+		T1.STOCK_REFID AS 'Nome',
+		(
+			SELECT MAT_MATERIAL_DESCRIPTION 
+			FROM TS_MATERIAL
+			WHERE MAT_MATERIAL_ID = T1.STOCK_MATERIAL_ID
+		) AS 'Material',
+		T1.STOCK_LENGTH AS 'Comprimento'
+FROM TS_STOCKS AS T1
+WHERE T1.STOCK_REFID != ''</value>
+    <comment>Utilizado no formulário 'FrmInventário'</comment>
+  </data>
+  <data name="CONSULTA_CNCS" xml:space="preserve">
+    <value>SELECT	T1.JOB_JOB_DESCRIPTION,
+		ISNULL(T1.JOB_NC_FILE, 'CNC não localizado') AS JOB_NC_FILE,
+		T1.JOB_MODIFIED
+FROM TS_JOB AS T1
+WHERE T1.JOB_JOB_DESCRIPTION&lt;&gt;'&lt;All Kit&gt;'</value>
+    <comment>Utilizado no formulário 'FrmCncs_View'</comment>
+  </data>
+  <data name="CONSULTA_FAMILIAS" xml:space="preserve">
+    <value>select distinct JOB_FAMILY from TS_JOB where JOB_FAMILY IS NOT NULL</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="CONSULTA_INSTRUCOES_TRABALHO" xml:space="preserve">
+    <value>--Consulta as instruções do trabalho referênciado
+select	JBI_INSTRUCTION as 'Ordem',
+		JBI_INSTRUCTION_TYPE_ID as 'Tipo_Instru_Db',
+		JBI_INSTRUCTION_DESC as 'Descrição',
+		JBI_SPEED as 'Velocidade (RPM)',
+		JBI_FEED as 'Avanço lateral',
+		JBI_PLUNGE as 'Avanço vertical',
+		JBI_TIME as 'Tempo do processo'
+from TS_JOB_INSTRUCTION
+where JBI_INSTRUCTION_TYPE_ID IN (0, 1, 2, 3, 4, 5)
+and JBI_JOB_DESC = @JOBNAME</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos'</comment>
+  </data>
+  <data name="CONSULTA_MATERIAIS" xml:space="preserve">
+    <value>select MAT_MATERIAL_ID, MAT_MATERIAL_DESCRIPTION, MAT_COMMENT from TS_MATERIAL</value>
+    <comment>Utilizado no formulário 'FrmMain'</comment>
+  </data>
+  <data name="CONSULTA_TEMPOS_FERRAMENTA_POR_JOB" xml:space="preserve">
+    <value>SELECT	T3.TL_TOOL_DESCRIPTION AS 'Nome da ferramenta',
+		T4.JBI_TURRET_POSITION AS 'Posição na torre',
+		SUBSTRING(T4.JBI_TIME, 11, 8) AS 'Tempo total de usinagem',
+		(
+			SELECT TMP1.JBI_INSTRUCTION_DESC
+			FROM TS_JOB_INSTRUCTION AS TMP1 WITH (NOLOCK)
+			WHERE TMP1.JBI_JOB_INSTRUCTION_ID = T4.JBI_JOB_INSTRUCTION_ID + 1
+		) AS 'Estratégia',
+		T4.JBI_INSTRUCTION AS 'Ordem de execução da estratégia'
+FROM TS_JOB AS T1
+	INNER JOIN TS_MOUNTING AS T2
+		ON T1.JOB_JOB_DESCRIPTION = T2.MNT_JOB_DESC 
+	INNER JOIN TS_TOOL AS T3
+		ON T2.MNT_TOOL_ID = T3.TL_TOOL_ID
+	INNER JOIN TS_JOB_INSTRUCTION AS T4
+		ON T4.JBI_JOB_DESC=T2.MNT_JOB_DESC
+		AND T4.JBI_TURRET_POSITION = T2.MNT_TURRET_POSITION
+WHERE	--T1.JOB_JOB_DESCRIPTION &lt;&gt; '&lt;All Kit&gt;' AND
+		T2.MNT_TOOL_ID = T3.TL_TOOL_ID --AND
+		--T4.JBI_TIME IS NOT NULL AND
+		--T1.JOB_JOB_DESCRIPTION = @JOB</value>
+    <comment>Utilizado no formulário 'FrmFerramentas_Rastreio'</comment>
+  </data>
+  <data name="CONSULTA_TOOLS_ADDITIVE" xml:space="preserve">
+    <value>select	DISTINCT T1.TL_TOOL_DESCRIPTION AS 'Descrição',
+		T1.TL_TOOL_ID AS 'id',
+		T1.TL_TOOL_TYPE_ADDITIVE_ID AS 'Tipo_Db',
+		T1.TL_UNITS_ID AS 'Unidade_Db',
+		T1.TL_DIAMETER AS 'Diâmetro',
+		T1.TL_VISIBILITY AS 'Visibilidade'
+FROM TS_TOOL AS T1 WITH (NOLOCK)
+	INNER JOIN TS_MOUNTING AS T2
+		ON T2.MNT_TOOL_ID=T1.TL_TOOL_ID</value>
+    <comment>Utilizado no formulário 'FrmFerramentas'</comment>
+  </data>
+  <data name="CONSULTA_TOOLS_BY_JOB" xml:space="preserve">
+    <value>/*
+	T1 - TS_JOB				(DADOS GERAIS DO TRABALHO)
+	T2 - TS_MOUNTING		(MONTAGENS DE FERRAMENTAS)
+	T3 - TS_TOOL			(FERRAMENTAS)
+	T4 - TS_JOB_INSTRUCTION (INSTRUÇÕES
+*/
+SELECT	T2.MNT_TURRET_POSITION AS 'Posição',
+		T3.TL_TOOL_DESCRIPTION AS 'Nome da ferramenta',
+		--Ferramentas de fresamento
+		ISNULL(T3.TL_TOOL_TYPE_MILL_ID, -1) AS TL_TOOL_TYPE_MILL_ID,
+		ISNULL(T3.TL_DIAMETER, 0)  AS 'Diâmetro',
+		--Ferramentas de torneamento
+		ISNULL(T3.TL_TOOL_TYPE_TURN_ID, -1) AS TL_TOOL_TYPE_TURN_ID,
+		ISNULL(T3.TL_SYMBOL_ID, -1) AS TL_SYMBOL_ID,
+		--Ferramentas de furação
+		ISNULL(T3.TL_TOOL_TYPE_HOLE_ID, -1) AS TL_TOOL_TYPE_HOLE_ID,
+		T3.TL_UNITS_ID AS 'Unidade_Db',
+		T4.JBI_TIME AS 'Tempo_Db'
+FROM TS_JOB AS T1
+	INNER JOIN TS_MOUNTING AS T2
+		ON T1.JOB_JOB_DESCRIPTION = T2.MNT_JOB_DESC 
+	INNER JOIN TS_TOOL AS T3
+		ON T2.MNT_TOOL_ID = T3.TL_TOOL_ID
+	INNER JOIN TS_JOB_INSTRUCTION AS T4
+		ON T4.JBI_JOB_DESC=T2.MNT_JOB_DESC AND T4.JBI_TURRET_POSITION =T2.MNT_TURRET_POSITION
+WHERE 
+     (T1.JOB_JOB_DESCRIPTION &lt;&gt; '&lt;All Kit&gt;')
+ and (T1.JOB_JOB_ID = @JOBID)</value>
+    <comment>Utilizado no formulário 'FrmTrabalhosNew'</comment>
+  </data>
+  <data name="CONSULTA_TOOLS_HOLE" xml:space="preserve">
+    <value>select	DISTINCT T1.TL_TOOL_DESCRIPTION AS 'Descrição',
+		T1.TL_TOOL_ID AS 'id',
+		T1.TL_TOOL_TYPE_HOLE_ID AS 'Tipo_Db',
+		T1.TL_TEETH AS 'Dentes',
+		T1.TL_UNITS_ID AS 'Unidade_Db',
+		ISNULL(T1.TL_HAND_OF_THREAD_ID, 0) AS 'LadoFerramenta_Db',
+		ISNULL(T1.TL_THREAD, 0) AS 'Passo',--Thread Pitch / TPI
+		ISNULL(T1.TL_THREAD_STORED_ID, 2) AS 'TipoRosca_Db',--0 - TPI (The number of threads per inch.) / 1 - Pitch / 2- N/A
+		T1.TL_DIAMETER AS 'Diâmetro',
+		T1.TL_VISIBILITY AS 'Visibilidade',
+		T2.MNT_ROUGHING_TOOL AS 'Para desbaste',
+		T2.MNT_FINISHING_TOOL AS 'Para acabamento'
+FROM TS_TOOL AS T1 WITH (NOLOCK)
+	INNER JOIN TS_MOUNTING AS T2
+		ON T2.MNT_TOOL_ID=T1.TL_TOOL_ID</value>
+    <comment>Utilizado no formulário 'FrmTool'</comment>
+  </data>
+  <data name="CONSULTA_TOOLS_INSTRUCOES" xml:space="preserve">
+    <value>SELECT	TS_MOUNTING.MNT_TURRET_POSITION,
+		CONCAT('T', ISNULL(TS_MOUNTING.MNT_TURRET_POSITION, 0), ' - ', TS_TOOL.TL_TOOL_DESCRIPTION) as TL_TOOL_DESCRIPTION,
+		ISNULL(TS_TOOL.TL_TOOL_TYPE_MILL_ID, -1) AS TL_TOOL_TYPE_MILL_ID,
+		ISNULL(TS_TOOL.TL_TOOL_TYPE_TURN_ID, -1) AS TL_TOOL_TYPE_TURN_ID,
+		ISNULL(TS_TOOL.TL_TOOL_TYPE_HOLE_ID, -1) AS TL_TOOL_TYPE_HOLE_ID
+FROM TS_JOB 
+	INNER JOIN TS_MOUNTING 
+		ON TS_JOB.JOB_JOB_DESCRIPTION = TS_MOUNTING.MNT_JOB_DESC 
+	INNER JOIN TS_TOOL 
+		ON TS_MOUNTING.MNT_TOOL_ID = TS_TOOL.TL_TOOL_ID
+	INNER JOIN TS_JOB_INSTRUCTION
+		ON JBI_JOB_DESC=MNT_JOB_DESC AND JBI_TURRET_POSITION = MNT_TURRET_POSITION
+WHERE TS_JOB_INSTRUCTION.JBI_JOB_DESC = @JOBNAME
+order by TS_JOB_INSTRUCTION.JBI_JOB_INSTRUCTION_ID</value>
+    <comment>Utilizado no formulário 'FrmInstrucoes'</comment>
+  </data>
+  <data name="CONSULTA_TOOLS_MILL" xml:space="preserve">
+    <value>SELECT	DISTINCT T1.TL_TOOL_DESCRIPTION AS 'Descrição',
+		T1.TL_TOOL_ID AS 'id',
+		T1.TL_TOOL_TYPE_MILL_ID AS 'Tipo_Db',
+		T1.TL_UNITS_ID AS 'Unidade_Db',
+		T1.TL_DIAMETER AS 'Diâmetro',
+		T1.TL_VISIBILITY AS 'Visibilidade',
+		T2.MNT_ROUGHING_TOOL AS 'Para desbaste',
+		T2.MNT_FINISHING_TOOL AS 'Para acabamento'
+FROM TS_TOOL AS T1 WITH(NOLOCK)
+	INNER JOIN TS_MOUNTING AS T2
+		ON T2.MNT_TOOL_ID=T1.TL_TOOL_ID</value>
+    <comment>Utilizado no formulário 'FrmFerramentas'</comment>
+  </data>
+  <data name="CONSULTA_TOOLS_PROBE" xml:space="preserve">
+    <value>select	DISTINCT T1.TL_TOOL_DESCRIPTION AS 'Descrição',
+		T1.TL_TOOL_ID AS 'id',
+		T1.TL_TOOL_TYPE_PROBE_ID AS 'Tipo_Db',
+		T1.TL_UNITS_ID AS 'Unidade_Db',
+		T1.TL_DIAMETER AS 'Diâmetro',
+		T1.TL_VISIBILITY AS 'Visibilidade',
+		T2.MNT_GAUGE_POINT_ID AS 'PontoDefasagem_Db'--0 Primário / 1 Secundário (no meio)
+FROM TS_TOOL AS T1 WITH (NOLOCK)
+	INNER JOIN TS_MOUNTING AS T2
+		ON T2.MNT_TOOL_ID=T1.TL_TOOL_ID</value>
+    <comment>Utilizado no formulário 'FrmFerramentas'</comment>
+  </data>
+  <data name="CONSULTA_TOOLS_TURN" xml:space="preserve">
+    <value>select	DISTINCT T1.TL_TOOL_DESCRIPTION AS 'Descrição',
+		T1.TL_TOOL_ID AS 'id',
+		T1.TL_TOOL_TYPE_TURN_ID AS 'Tipo_Db',
+		ISNULL(T1.TL_SYMBOL_ID, 0) AS 'Símbolo_Db',
+		T1.TL_UNITS_ID AS 'Unidade_Db',
+		ISNULL(T1.TL_HAND_OF_TOOL_ID, 0) AS 'LadoFerramenta_Db',
+		T1.TL_VISIBILITY AS 'Visibilidade',
+		T2.MNT_ROUGHING_TOOL AS 'Para desbaste',
+		T2.MNT_FINISHING_TOOL AS 'Para acabamento'
+FROM TS_TOOL AS T1 WITH(NOLOCK)
+	INNER JOIN TS_MOUNTING AS T2
+		ON T2.MNT_TOOL_ID=T1.TL_TOOL_ID</value>
+    <comment>Utilizado no formulário 'FrmFerramentas'</comment>
+  </data>
+  <data name="CONSULTA_TRABALHOS" xml:space="preserve">
+    <value>select	JOB_JOB_ID as 'id',
+		JOB_JOB_DESCRIPTION as 'Nome do trabalho',
+		JOB_COMMENT as 'Comentário',
+		JOB_FAMILY as 'Familía',
+		JOB_SEQUENCE as 'Sequência',
+		JOB_LOCATION as 'Máquina',
+		JOB_CUSTOMER as 'Cliente',
+		JOB_PROGRAMMER as 'Programador',
+		JOB_MATERIAL_DESC as 'Material',
+		JOB_JOB_STATUS_ID as 'Status_Db',
+		JOB_CAM_FILE as 'Arquivo PPF',
+		JOB_CAD_FILE as 'Arquivo CAD',
+		JOB_NC_FILE as 'Arquivo CNC',
+		JOB_PREDEFINED_TOOLING as 'Pré-carga de ferramentas',
+		JOB_REVISION as 'Revisão',
+		JOB_CYCLE_TIME as 'Tempo de usinagem',
+		JOB_NOTES_SUBJECT,
+		JOB_NOTES_FILE,
+		JOB_NOTES,
+		JOB_FIXTURE_NOTES_SUBJECT,
+		JOB_FIXTURE_NOTES_FILE,
+		JOB_FIXTURE_NOTES,
+		JOB_STOCK_NOTES_SUBJECT,
+		JOB_STOCK_NOTES_FILE,
+		JOB_STOCK_NOTES,
+		JOB_VISIBILITY as 'Visibilidaed_Db',
+		JOB_CREATED as 'Data de criação',
+		JOB_MODIFIED as 'Data da última modificação',
+		JOB_STICKOUT
+from TS_JOB
+where JOB_JOB_DESCRIPTION &lt;&gt; '&lt;All Kit&gt;'</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos'</comment>
+  </data>
+  <data name="CONSULTA_ULTIMO_JOB_ID" xml:space="preserve">
+    <value>select top 1 T1.JOB_JOB_ID from TS_JOB AS T1 order by T1.JOB_JOB_ID desc</value>
+    <comment>Utilizado no formulário 'FrmOrdens_New'</comment>
+  </data>
+  <data name="CONSULTA_USABILIDADE_TOOLS_IN_JOBS" xml:space="preserve">
+    <value>SELECT	T1.JOB_JOB_DESCRIPTION AS 'Nome do trabalho', 
+		T1.JOB_SEQUENCE as 'Sequência',
+		COUNT(T3.TL_TOOL_ID) AS 'Quantidade de vezes utilizada no trabalho'
+FROM TS_JOB AS T1
+	INNER JOIN TS_MOUNTING AS T2
+		ON T1.JOB_JOB_DESCRIPTION = T2.MNT_JOB_DESC 
+	INNER JOIN TS_TOOL AS T3
+		ON T2.MNT_TOOL_ID = T3.TL_TOOL_ID
+	INNER JOIN TS_JOB_INSTRUCTION AS T4
+		ON T4.JBI_JOB_DESC=T2.MNT_JOB_DESC
+		AND T4.JBI_TURRET_POSITION = T2.MNT_TURRET_POSITION
+WHERE	T1.JOB_JOB_DESCRIPTION &lt;&gt; '&lt;All Kit&gt;' AND
+		--T3.TL_TOOL_ID = 3219
+		T3.TL_TOOL_ID = @TOOL_ID
+GROUP BY T1.JOB_JOB_DESCRIPTION, T1.JOB_SEQUENCE</value>
+    <comment>Utilizado no formulário 'FrmFerramentas_Rastreio'
+-Pode ser utilizado para qualquer ferramenta.</comment>
+  </data>
+  <data name="DELETA_IMAGEM_BANCO_POR_ID" xml:space="preserve">
+    <value>delete from TS_JOB_IMAGES where JBP_JOB_IMAGE_ID=@IDIMG</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos_New'</comment>
+  </data>
+  <data name="DELETA_TRABALHOS_E_VINCULOS" xml:space="preserve">
+    <value>delete from TS_JOB where JOB_JOB_ID = @JOBID
+delete from TS_JOB_DESC where JBD_JOB_DESC = @JOBNAME
+delete from TS_JOB_IMAGES where JBP_JOB_ID = @JOBID
+delete from TS_JOB_INSTRUCTION where JBI_JOB_DESC = @JOBID</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos'</comment>
+  </data>
+  <data name="INSERE_MAGEM_EDGECAM" xml:space="preserve">
+    <value>insert into TS_JOB_IMAGES (JBP_JOB_ID, JBP_IMAGE_DESC, JBP_IMAGE_TOOLTIP,
+						   JBP_IMAGE_NAME, JBP_IMAGE_URL, JBP_IMAGE_ORDER,
+						   JBP_CREATED, JBP_MODIFIED, JBP_IMAGE_BLOB)
+				   values (@JOBID, @NOMEIMG, @NOMEIMG,
+						   @NOMEIMG, @DIRIMG, @IMGORDER,
+						   @DTCREATE, @DTMODIFY, CONVERT(varbinary(max),@IMGBUFFER))</value>
+    <comment>Utilizado no formulário 'FrmTrabalhos_New'</comment>
+  </data>
+</root>

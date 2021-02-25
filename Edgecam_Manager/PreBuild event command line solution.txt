@@ -1,0 +1,5 @@
+﻿copy "$(ProjectDir)SkaConfig.xml" "$(TargetDir)SkaConfig.xml"
+copy "$(ProjectDir)\Scripts Edgecam\AbrePeca.js" "$(TargetDir)AbrePeca.js"
+
+if not exist "$(TargetDir)\Themes" mkdir "$(TargetDir)\Themes"
+copy "$(ProjectDir)\Themes\*.*" "$(TargetDir)\Themes"
