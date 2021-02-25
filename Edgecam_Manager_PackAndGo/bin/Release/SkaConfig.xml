@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Configuration>
+  <!--Arquivo de configuração SKA-->
+  <ConfiguracoesGerais>
+    <!--Banco de dados do Edgecam-->
+    <ConfigValue Variable="SERVER_EC" Value="(local)\ECSQLEXPRESS" />
+    <ConfigValue Variable="BANCO_EC" Value="Sample_ToolStore_2018R2" />
+    <ConfigValue Variable="USER_EC" Value="sa" />
+    <ConfigValue Variable="PASS_EC" Value="" />
+    <!--Banco de dados intermediário-->
+    <ConfigValue Variable="SERVER_AUX" Value="(local)\ECSQLEXPRESS" />
+    <ConfigValue Variable="BANCO_AUX" Value="Edgecam_manager_2019R1" />
+    <ConfigValue Variable="USER_AUX" Value="sa" />
+    <ConfigValue Variable="PASS_AUX" Value="" />
+    <!--Banco de dados de Logs-->
+    <ConfigValue Variable="SERVER_LOG" Value="(local)\ECSQLEXPRESS" />
+    <ConfigValue Variable="BANCO_LOG" Value="Edgecam_manager_2019R1_Log" />
+    <ConfigValue Variable="USER_LOG" Value="sa" />
+    <ConfigValue Variable="PASS_LOG" Value="" />
+    <!--Configurações gerais da aplicação-->
+    <ConfigValue Variable="MANTER_CONECTADO" Value="TRUE" />
+    <ConfigValue Variable="USUARIO" Value="SYSADM" />
+    <ConfigValue Variable="SENHA" Value="" />
+    <ConfigValue Variable="IDIOMA" value="pt-BR"/>
+    <!--Define o tipo de cor que a interface vai ter (DARK ou LIGHT)-->
+    <ConfigValue Variable="COLOR_THEME" Value="LIGHT"/>
+  </ConfiguracoesGerais>
+</Configuration>
