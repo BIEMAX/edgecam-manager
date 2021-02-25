@@ -1,0 +1,7 @@
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaControl_ImagedComboBox\bin\Release\Ska.ImagedComboBox.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaControl_ImagedComboBox\bin\Release\Ska.ImagedComboBox.pdb
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.Form1.resources
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.Properties.Resources.resources
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaControl_ImagedComboBox\obj\x86\Release\SkaImagedComboBox.csproj.GenerateResource.Cache
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.dll
+C:\@Backup\@@@@@@@backup\Projects\@Edgecam_Manager - 2020 R1 - beta 1\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.pdb

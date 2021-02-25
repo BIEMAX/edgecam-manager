@@ -1,0 +1,16 @@
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager\SkaControl_ImagedComboBox\bin\Release\Ska.ImagedComboBox.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager\SkaControl_ImagedComboBox\bin\Release\Ska.ImagedComboBox.pdb
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.Form1.resources
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.Properties.Resources.resources
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager\SkaControl_ImagedComboBox\obj\x86\Release\SkaControl_ImagedComboBox.csproj.GenerateResource.Cache
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.pdb
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\Edgecam_Manager\SkaControl_ImagedComboBox\obj\x86\Release\SkaControl_ImagedComboBox.csprojResolveAssemblyReference.cache
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 2\SkaControl_ImagedComboBox\bin\Release\Ska.ImagedComboBox.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 2\SkaControl_ImagedComboBox\bin\Release\Ska.ImagedComboBox.pdb
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 2\SkaControl_ImagedComboBox\obj\x86\Release\SkaControl_ImagedComboBox.csprojResolveAssemblyReference.cache
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 2\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.Form1.resources
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 2\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.Properties.Resources.resources
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 2\SkaControl_ImagedComboBox\obj\x86\Release\SkaControl_ImagedComboBox.csproj.GenerateResource.Cache
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 2\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.dll
+C:\Users\Dionei\Documents\Visual Studio 2013\Projects\@Edgecam_Manager - beta 2\SkaControl_ImagedComboBox\obj\x86\Release\Ska.ImagedComboBox.pdb
